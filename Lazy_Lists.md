@@ -1,4 +1,4 @@
-## Lazy Lists
+# Lazy Lists
 
 Lazy lists are one of the fundamental aspects in Functional Programming because it allows us to define and create infinite lists.  In Coconut, Lazy lists, represented by “banana brackets” `(| |)`, are defined to be lazily evaluated iterator literals. This means that values are not stored in the list, but iterables are. Lazy evaluation is similar to the `::` operator, in that expressions are not evaluated until that particular element is needed. 
 

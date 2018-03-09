@@ -1,4 +1,4 @@
-## Iterators
+# Iterators
 
 This section of tutorial will be focused on iterators. If you are unfamiliar with iterators in Python, you might find it helpful to read through the Python tutorial on iterators and generators, which you can find [here](https://docs.Python.org/3/tutorial/classes.html#iterators). This tutorial also references the Python itertools module, the documentation for which can be found [here](https://docs.Python.org/2/library/itertools.html).
 
@@ -38,7 +38,7 @@ To see a more complex implementation of chaining in coconut, look at Lazy Lists!
 
 Let’s now take a moment to look at some of the Python itertools functionality that’s built into Coconut and ready to use fairly quickly.
 
-# takewhile and dropwhile
+## takewhile and dropwhile
 
 Coconut provides itertools.takewhile as a built-in part of the language under the name takewhile. It works the same way in both Python and Coconut. It takes a predicate or a condition as its first argument and then an iterable as its second argument and returns an iterator containing only those values that satisfied the condition specified. Let’s take a look at the following to begin with:
 
@@ -65,7 +65,7 @@ Output ([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
 
 Something important to remember is that neither takewhile nor dropwhile affect the original iterable! They create new iterables that satisfy the conditions passed in.
 
-# groupsof
+## groupsof
 
 Say you have an iterator for a long sequence and you want to break it down into chunks. This is what groupsof does. It takes a number and an iterable as input, and converts it to a list of `n` sized tuples (the only exception being if the original iterable was not evenly divisible by `n`, in which case the last tuple will be less than `n` in length).
 
