@@ -75,4 +75,15 @@ groupsof(2, range(1,10)) |> list |> print
 ```
 
 This is not built in in Python, so doing the same thing in Python would require the following, which is a bit more cumbersome:
-(copypaste Python example from docs in here)
+
+```python
+pairs = []
+group = []
+for item in range(1, 11):
+    group.append(item)
+    if len(group) == 2:
+        pairs.append(tuple(group))
+        group = []
+if group:
+    pairs.append(tuple(group))
+```
