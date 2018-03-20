@@ -73,6 +73,35 @@ Output([1, 2, 3, 4, 20, 21, 22, 23, 24])
 ***
 ### Page 3: Iterator slicing: Basic syntax (needed for Lazy Evaluation example)
 
+Take the cookiebox example from earlier. If one wanted to retrieve a few cookies from the box, one way to do that would be through iterator slicing. Take the following as an example:
+```
+cookiebox = iter(["chocolate chip", "oatmeal raisin", "sugar", "shortbread", "gingerbread"])
+
+subbox = cookiebox$[0:2]
+```
+Here, the $ operator is used with the square brackets to indicate that we want to slice the iterator, or cut a section out of it to use.
+
+Try printing both subbox and cookiebox out to see how this worked.
+```
+Solution/Print code:
+cookiebox |> list |> print
+subbox |> list |> print
+
+Output:
+[u'sugar', u'shortbread', u'gingerbread']
+[u'chocolate chip', u'oatmeal raisin']
+```
+From this we see that the first two elements of cookiebox were transferred over to subbox. However, it is also clear that the original cookiebox iterator was not preserved.
+
+One feature of Coconut's iterator slicing that is not Present in Python is the ability to use negative indices in slicing.
+```
+a = iter("abc")
+a$[-1] |> print
+
+Output(c)
+```
+This would be a lot more complicated to do in Python.
+
 ***
 ### Page 4: Iterator chaining: Lazy Evaluation
 
