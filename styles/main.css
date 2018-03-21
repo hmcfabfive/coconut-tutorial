@@ -51,12 +51,12 @@ h3 {
     color: white;
 }
 
-a {
+/*a {
   color: #1e6bb8;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
-
+*/
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -68,7 +68,7 @@ a {
   border-radius: 0.3rem;
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
-    margin-left: 1rem; }
+   /* margin-left: 1rem;*/ }
 
 .btn:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -94,3 +94,63 @@ a {
     .btn + .btn {
       margin-top: 1rem;
       margin-left: 0; } }
+
+
+
+a:hover, a:focus {
+  color: white;
+  text-decoration: none;
+
+}
+.square-service-block{
+	position:relative;
+	overflow:hidden;
+	margin:15px auto;
+	/*padding-bottom: 1rem;*/
+	padding-left: calc(6.25vw + 1rem);
+
+	font-family: sans-serif;
+	font-weight: lighter;
+    color: white;
+	}
+.square-service-block a {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+  display: block;
+  padding: 60px 25vw;
+  text-align: center;
+  width: 30%;
+  	font-family: sans-serif;
+	font-weight: lighter;
+	color: white;
+}
+.square-service-block a:hover{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); 
+  	font-family: sans-serif;
+	font-weight: lighter;
+    color: white;
+}
+
+.ssb-icon {
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+h2.ssb-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+}
