@@ -1,6 +1,8 @@
 body {
-    background-image: linear-gradient(to right, #155799, #159957); 
+    background-image: linear-gradient(to right, #155799, #159957);
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -120,7 +122,7 @@ a:hover, a:focus {
   border-width: 1px;
   border-radius: 0.3rem;
   text-decoration: none;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   display: block;
   padding: 60px 25vw;
   text-align: center;
@@ -133,7 +135,7 @@ a:hover, a:focus {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); 
+  border-color: rgba(255, 255, 255, 0.3);
   	font-family: sans-serif;
 	font-weight: lighter;
     color: white;
@@ -154,3 +156,72 @@ h2.ssb-title {
   padding:0;
   text-transform: uppercase;
 }
+
+/* begin hambuger and sidenav code */
+
+.container {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 10;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* begin hambuger and sidenav code */
