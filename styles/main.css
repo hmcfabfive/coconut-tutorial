@@ -51,6 +51,16 @@ h3 {
     color: white;
 }
 
+.previous {
+	position:absolute;
+	margin-left: 50px;
+	left: 0px;
+    width: 1rem;
+    padding-right: 50px;
+	font-weight: lighter;
+    color: white;
+}
+
 .menubutton {
 	position: absolute;
         top: 50%;
