@@ -41,6 +41,8 @@ h3 {
     margin-right: 50px;
 }
 
+
+/* Button Formatting */
 .next {
 	position:absolute;
 	margin-right: 50px;
@@ -78,6 +80,7 @@ h3 {
   a:hover {
     text-decoration: underline; }
 */
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -117,12 +120,30 @@ h3 {
       margin-left: 0; } }
 
 
-
+/* Link Formatting */
 a:hover, a:focus {
   color: white;
   text-decoration: none;
 
 }
+
+a.homepage {
+  font-size: 10px;
+}
+
+a.basemenu {
+  font-size: 10px;
+}
+
+a.sectiontitle {
+  font-size: 10px;
+}
+
+a.tutorial {
+  font-size: 8px;
+}
+
+
 .square-service-block{
 	position:relative;
 	overflow:hidden;
