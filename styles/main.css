@@ -199,21 +199,26 @@ h2.ssb-title {
 
 /* begin hambuger and sidenav code */
 
+/* holds the three bars for the hamburger */
 .container {
     display: block;
     cursor: pointer;
     position: relative;
     top: 50px;
-    left: 50px;
+    margin-left: 50px;
+    width: 35px;
     z-index: 10;
+    transition: 0.5s;
 }
 
+/* styling for the hamburger bars */
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+    z-index: 10;
 }
 
 /* Rotate first bar */
@@ -233,6 +238,7 @@ h2.ssb-title {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+/* styling for the nav */
 .sidenav {
     height: 100%;
     width: 0px;
@@ -246,26 +252,31 @@ h2.ssb-title {
     transition: 0.5s;
 }
 
+/* styling for the links within the nav */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.15s;
 }
 
 .sidenav a:hover {
     color: #f1f1f1;
 }
 
-.sidenav a:current {
-    color: ##afeeee;
-}
-
+/* something w3schools added to make the nav nicer on small screens */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+} */
+
+/* makes the main content of the page move over when the nav comes opens */
+#main-content {
+    transition: 0.5s;
+    padding: 20px;
+    transition: 0.5s;
 }
 
-/* begin hambuger and sidenav code */
+/* end hambuger and sidenav code */
