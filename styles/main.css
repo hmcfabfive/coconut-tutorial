@@ -40,7 +40,6 @@ h3 {
     margin-right: 50px;
 }
 
-
 /* Button Formatting */
 .next {
 	position:absolute;
@@ -271,7 +270,7 @@ h2.ssb-title {
     .sidenav a {font-size: 18px;}
 } */
 
-/* makes the main content of the page move over when the nav comes opens */
+/* makes the main content of the page move over when the nav opens */
 #main-content {
     transition: 0.5s;
     padding: 20px;
