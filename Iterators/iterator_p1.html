@@ -4,7 +4,10 @@
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
   <script src="scripts/main.js"></script>
 </head>
+
 <body>
+
+  <!-- sidebar navigation -->
 
   <div class="container" onclick="myFunction(this); toggleNav();">
     <div class="bar1"></div>
@@ -12,51 +15,72 @@
     <div class="bar3"></div>
   </div>
 
-
   <div id="mySidenav" class="sidenav">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <p> <br/> </p>
+    <a href="#" class="homepage">Home Page</a>
+    <hr>
+    <a href="#" class="basemenu">About</a>
+    <a href="#" class="basemenu">Services</a>
+    <a href="#" class="basemenu">Clients</a>
+    <a href="#" class="basemenu">Contact</a>
+    <hr>
+    <a href="#" class="sectiontitle">Section Title Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="sectiontitle">Section Title Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="sectiontitle">Section Title Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
+    <a href="#" class="tutorial">Tutorial Page</a>
   </div>
 
 <br>
 <br>
+
+<!-- Section data: the individual information for the tutorial page goes here -->
+
 <h1>
-	<p> First Exposure: Python Iterators </p>
+    <p> First Exposure: Python Iterators </p>
 </h1>
+
 <h2>
-	<p> Let's start by entering the following list of cookie types into our Coconut interpreter:</p>
-    <div class="highlight-coconut"><div class="highlight"><pre><span class="p">(</span><span class="o">|</span> <span class="n">first_elem</span><span class="p">()</span> <span class="o">|</span><span class="p">)</span> <span class="o">::</span> <span class="n">rest_elems</span><span class="p">()</span>
-</pre></div>
-</div>
-    <p>
-        Python's iterator functionality can be complex and a bit difficult to use. A good chunk of it comes from itertools, which is a module that implements several iterator building blocks inspired by functional programming languages from Haskell and APL. Coconut simplifies many of these features and treats them as built-ins rather than add-ons., making using iterators easier and more effective.
-    </p>
+    <p> Let's start by entering the following list of cookie types into our Coconut interpreter: <br><br>
+
+    x = iter(["chocolate chip", "oatmeal raisin", "sugar"]) <br><br>
+     
+    This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same <br><br>
+    <p> x.next() <br>
+    Output('chocolate chip') <br>
+    x.next() <br>
+    Output('oatmeal raisin')<br>
+    x.next() <br>
+    Output('sugar') <br>
+    x.next() <br>
+    Output('Traceback (most recent call last):
+    File "<string>", line 1, in <module>
+    StopIteration')<br><br>
+
+    Now let's try combining this with Coconut's syntax. Let's take x as following iterator: <br><br>
+    x = iter([1, 2, 3])<br><br>
+    Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
+    Solution
+    x |> list |> print
+
 </h2>
+
+<!-- Previous and next buttons: link to the appropriate pages when using -->
+
 <br>
 <section class="next">
 <a href='https://github.com/evhub/coconut' class="btn">Next</a>
+</section>
+
+<section class="previous">
+<a href='/iterator_title.html' class="btn">Previous</a>
 </section>
 <br>
 </body>
