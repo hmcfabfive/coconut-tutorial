@@ -1,0 +1,67 @@
+.src-components-__Header-module___header{
+    height:42px;
+    padding:0 24px;
+    font-size:14px;
+    font-weight:700;
+    line-height:3;
+    text-transform:uppercase;
+    letter-spacing:.08em
+}
+.src-components-__Editor-module___editor{
+    grid-area:editor
+}
+.src-components-__Editor-module___headerButton{
+    height:inherit;
+    float:right;
+    border:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:700;
+    line-height:2.8;
+    text-transform:uppercase;
+    background-color:inherit;
+    letter-spacing:.08em;
+    cursor:pointer
+}
+.src-components-__Editor-module___headerButton:disabled{
+    color:#999;
+    cursor:default
+}
+.src-components-__Editor-module___errorMarker{
+    position:absolute;
+    background:rgba(255,0,0,.4)
+}
+.src-components-__Output-module___output{
+    grid-area:output
+}
+.src-components-__Output-module___headerSwitch{
+    float:right;
+    line-height:2.8;
+    cursor:pointer
+}
+.src-components-__Output-module___errorMarker{
+    position:absolute;
+    background:rgba(255,0,0,.4)
+}
+.src-containers-__App-module___container{
+    height:100vh;
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:"editor" "output"
+}
+@media only screen and (min-width:600px){
+    .src-containers-__App-module___container{
+    /* when these are commented out, the display is vertical rather than horizontal */
+        /* grid-template-columns:1fr 1fr;
+        grid-template-rows:1fr;
+        grid-template-areas:"editor output" */
+    }
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale
+}
+/*# sourceMappingURL=main.8e1c53f0.css.map*/
