@@ -3,6 +3,7 @@ function myFunction(x) {
     x.classList.toggle("change");
 }
 
+// toggle the side navigation
 function toggleNav() {
   var sideNav = document.getElementById("mySidenav");
   var mainContent = document.getElementById("main-content");
