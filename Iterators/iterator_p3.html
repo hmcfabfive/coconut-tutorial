@@ -44,31 +44,33 @@
 <!-- Section data: the individual information for the tutorial page goes here -->
 
 <h1>
-    <p> First Exposure: Python Iterators </p>
+    <p> Iterator slicing: Basic syntax </p>
 </h1>
 
 <h2>
-    <p> Let's start by entering the following list of cookie types into our Coconut interpreter: <br><br>
+    <p> Take the cookiebox example from earlier. If one wanted to retrieve a few cookies from the box, one way to do that would be through iterator slicing. Take the following as an example: <br><br>
 
-    x = iter(["chocolate chip", "oatmeal raisin", "sugar"]) <br><br>
+    cookiebox = iter(["chocolate chip", "oatmeal raisin", "sugar", "shortbread", "gingerbread"])<br>
+    subbox = cookiebox$[0:2] <br><br>
      
-    This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same <br><br>
-    x.next() <br>
-    Output('chocolate chip') <br>
-    x.next() <br>
-    Output('oatmeal raisin')<br>
-    x.next() <br>
-    Output('sugar') <br>
-    x.next() <br>
-    Output('Traceback (most recent call last):
-    File "<string>", line 1, in <module>
-    StopIteration')<br><br>
+    Here, the $ operator is used with the square brackets to indicate that we want to slice the iterator, or cut a section out of it to use. Try printing both subbox and cookiebox out to see how this worked. <br><br>
 
-    Now let's try combining this with Coconut's syntax. Let's take x as following iterator: <br><br>
-    x = iter([1, 2, 3])<br><br>
-    Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
-    Solution
-    x |> list |> print </p>
+    Solution/Print code:<br>
+    cookiebox |> list |> print<br>
+    subbox |> list |> print<br><br>
+    Output:<br>
+    [u'sugar', u'shortbread', u'gingerbread']<br>
+    [u'chocolate chip', u'oatmeal raisin']<br><br>
+
+    From this we see that the first two elements of cookiebox were transferred over to subbox. However, it is also clear that the original cookiebox iterator was not preserved. <br><br>
+    One feature of Coconut's iterator slicing that is not Present in Python is the ability to use negative indices in slicing.<br><br>
+
+    a = iter("abc")<br>
+    a$[-1] |> print<br>
+    Output(c)<br>
+
+    This would be a lot more complicated to do in Python.
+     </p>
 
 </h2>
 
@@ -76,7 +78,7 @@
 
 <br>
 <section class="next">
-<a href='iterator_p2.html' class="btn">Next</a>
+<a href='iterator_p4.html' class="btn">Next</a>
 </section>
 
 <section class="previous">
