@@ -1,4 +1,5 @@
-/* split screen */
+/* put all of main.css in this file */
+@import "main.css";
 
 /* Split the screen */
 .split {
@@ -14,90 +15,11 @@
 .left {
   left: 0;
   background-color: "white";
+  z-index: 0;
 }
 
 /* Control the right side */
 .right {
   right: 0;
-}
-
-/* begin hambuger and sidenav code */
-
-.container {
-    display: block;
-    cursor: pointer;
-    position: relative;
-    top: 50px;
-    margin-left: 50px;
-    width: 35px;
-    z-index: 10;
-    transition: 0.5s;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-    z-index: 10;
-}
-
-/* Rotate first bar */
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .bar2 {
-    opacity: 0;
-}
-
-/* Rotate last bar */
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.15s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-} */
-
-#main-content {
-    transition: 0.5s;
-    padding: 20px;
-}
-
-/* end hambuger and sidenav code */
-
-.code-block {
-
+  z-index: 0;
 }
