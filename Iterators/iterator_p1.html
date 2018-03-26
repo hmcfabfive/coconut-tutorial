@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="../styles/main.css">
+  <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
   <script src="scripts/main.js"></script>
 </head>
 
@@ -50,25 +51,34 @@
 <h2>
     <p> Let's start by entering the following list of cookie types into our Coconut interpreter: <br><br>
 
-    x = iter(["chocolate chip", "oatmeal raisin", "sugar"]) <br><br>
+    <code>
+        <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
+        </pre></div>
+    </code>
      
     This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same <br><br>
-    x.next() <br>
+    <div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+    </pre></div>
     Output('chocolate chip') <br>
-    x.next() <br>
+    <div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+    </pre></div>
     Output('oatmeal raisin')<br>
-    x.next() <br>
+    <div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+    </pre></div>
     Output('sugar') <br>
-    x.next() <br>
+    <div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+    </pre></div>
     Output('Traceback (most recent call last):
     File "<string>", line 1, in <module>
     StopIteration')<br><br>
 
     Now let's try combining this with Coconut's syntax. Let's take x as following iterator: <br><br>
-    x = iter([1, 2, 3])<br><br>
+    <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+    </pre></div><br><br>
     Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
     Solution
-    x |> list |> print </p>
+    <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">print</span></pre></div>
+    </p>
 
 </h2>
 
