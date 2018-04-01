@@ -2,7 +2,7 @@
 ***
 ### Introduction
 
-Say you're working in a recycling facility and want to write a program that will sort out the aluminum, paper, and plastic recyclables. This would be easy enough to write using if statements:
+Say you're working in a recycling facility and want to write a program that will sort the aluminum, paper, and plastic recyclables. This would be easy enough to write using if statements:
 ```
 def sortItems(recyclable):
     """sort the items based on material"""
@@ -21,7 +21,7 @@ def sortItems(recyclable):
 ### Pattern matching!
 
 Pattern matching is great for when you have lots of things that you want to act on based on their properties. 
-On first glance, all that pattern matching does is reduce the amount of typing needed for if statements. And in some cases (such as this one) it doesn't even cut down on the typing! Here is how you would write the same function as before, but using pattern matching:
+At first glance, all that pattern matching does is reduce the amount of typing needed for if statements. And in some cases (such as this one) it doesn't even cut down on the typing! Here is how you would write the same function as before, but using pattern matching:
 ```
 def sortItems(recyclable):
     """sort the items based on material"""
@@ -35,15 +35,15 @@ def sortItems(recyclable):
     else:
         raise TypeError("item not recyclable")
 ```
-As you can see above, we feed the parameter "recyclable" into the case-match statement. Then each "match" line assesses how to handle "recyclable" based on its properties. In this example, pattern matching wasn't very effective. But stay tuned to see what you can really use pattern matching for!
+As you can see above, we feed the parameter "recyclable" into what is known as a case-match statement. Each "match" line assesses how to handle "recyclable" based on its properties. In this example, pattern matching wasn't very effective, and had the same effect as just using if statements. But stay tuned to see some cases where pattern matching is really powerful!
 ***
 ### Numbers!
 
-Where pattern matching really shines is with numbers. Now that you know basically what pattern matching does, let's apply it to factorials.
+Pattern matching really shines when it is used with numbers and functions. Let's see this in action by applying it to factorials.
 
 A factorial, written as "x!" is equal to the product of all the numbers leading up to and including x. So 5! = 5*4*3*2*1. As a rule, 0!=1.
 
-How, then, can pattern matching help us solve this? Well, we know that when x=0, x!=1. And for all other numbers, x!=x*(x-1)! . So we can write a pattern matching statement to help us solve factorials:
+How, then, can pattern matching help us solve this? Well, we know that when x=0, x!=1. And for all other numbers, x!=x*(x-1)! With this in mind, we can write a pattern matching statement to help us solve factorials:
 ```
 def factorial(x):
     """Compute x! where x is an integer >= 0."""
@@ -59,6 +59,6 @@ It's so clean!
 ***
 ### Thinking further...
 
-Pattern matching is great for what are called recursive functions. Recursive functions perform the same operation on an object until it has reached a "base case" — a minimal state, such as 0 in our factorial example.
+Pattern matching is great for recursive functions. Recursive functions perform the same operation on an object until it has reached a "base case" — a minimal state, such as 0 in our factorial example.
 
 Think about ways you can apply pattern matching or recursion to tasks you want to achieve!

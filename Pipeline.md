@@ -1,8 +1,8 @@
 # Pipeline
 
-Coconut’s pipe operators allow for pipeline-style function application, which makes multiple function calls more readable.
- 
-The different operators are:
+Coconut provides support for and in many ways is centered around the use of the pipe operator and pipeline-style function application. The word pipeling is indicative of what these operators do: data processing elements and functions are connected and series with the output of one become the input of the next. This makes multiple function calls more readable and simpler to implement.
+
+The different operators supported by Ccoconut are:
 ```python
 (|>)    => pipe forward
 (|*>)   => multiple-argument pipe forward
@@ -13,7 +13,7 @@ The different operators are:
 
 <br/>
 
-Here's how function calls are structured in Coconut using pipes:
+Let's look at a function call in Coconut that uses pipe forward:
 ```python
 obj |> .attribute |> .method(args) |> func$(args) |> .[index]
 ```
@@ -22,9 +22,12 @@ Compare that to equivalent Python code:
 ```python
 func(args, obj.attribute.method(args))[index]
 ```
+
+With pipelines it's a lot easier and clearer to see what is happening and where the data is flowing.
+
 <br/>
 
-For a more concrete example, consider the following Python:
+For a more concrete example, consider the following Python code:
 ```python
 print(sum(list(filter(lambda x: x % 2 == 0, range(10)))))
 ```
