@@ -5,7 +5,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
       <meta name="theme-color" content="#000000">
       <title>Section | Coconut Tutorial</title>
-      <link href="../styles/main.8e1c53f0.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
@@ -17,25 +17,38 @@
 
   <!-- Where the code for everything else on the page starts -->
   <div id="main-content">
+    <!-- Page Content goes here -->
     <div class="split left">
-        <h1>First Exposure: Python Iterators</h1>
+        <h1>
+          <p> First Exposure: Python Iterators </p>
+        </h1>
+
         <h2>
-          <p>Let's start by entering the following list of cookie types into our Coconut interpreter: <br><br>
+          <p> Let's start by making a list of cookie types, converting it into an iterator, and entering it into our Coconut interpreter: <br>
+
           <code>
-          <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
-          </pre></div>
+            <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
+</pre></div>
           </code>
-        This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same <br><br>
-        Let's try combining this with Coconut's syntax. Let's take x as the following iterator: <br><br>
-        <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-        </pre></div>
-        Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
-        Solution
-        <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">print</span></pre></div>
-        </p></h2>
+     
+          This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same. Try entering the following command into the interpreter a few times iterate through the cookiebox. <br><br>
+          <div class="highlight"><pre><span></span><span class="n">x</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+</pre></div>
+
+          Now let's try combining this with Coconut's syntax. Let's take x as the following iterator: <br><br>
+          <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</pre></div>
+          Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
+          Solution:<br><br>
+          <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">print</span></pre></div>
+          </p>
+
+        </h2>
+
+        <!-- Links to the other tutorial pages go here -->
         <br>
         <section class="next">
-        <a href='iterator_p2.html' class="btn">Next</a>
+        <a href='iterator_p2_interpreter.html' class="btn">Next</a>
         </section>
 
         <section class="previous">

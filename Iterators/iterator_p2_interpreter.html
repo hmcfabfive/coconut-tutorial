@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <title>Iterator chaining: Basic Syntax| Iterators | Coconut Tutorial</title>
+      <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
+      <link rel="stylesheet" href="../styles/interpreter.css">
+      <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
+      <script src="../scripts/interpreter.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <!-- Page Content goes here -->
+    <div class="split left">
+        <h1>
+            <p> Iterator chaining: Basic Syntax </p>
+        </h1>
+
+        <h2>
+            <p> Let's start with two iterables, in this case, two lists of cookie types. <br>
+
+            <div class="highlight"><pre><span></span><span class="n">box1</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
+<span class="n">box2</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
+</pre></div>
+             
+            We're going to consolidate these two iterables into one iterable using iterator chaining, so we can treat the two sequences as though they were one long sequence. In Python, this is done using the itertools.chain() functionality.<br><br>
+
+            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">chain</span><span class="p">(</span><span class="n">box1</span><span class="p">,</span> <span class="n">box2</span><span class="p">)</span>
+</pre></div>
+
+            In Coconut this is simplified by using the :: operator. <br><br>
+
+            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">box1</span> <span class="p">::</span> <span class="n">box2</span>
+</pre></div>
+            The :: command tells Coconut to link the two iterators. <br>
+
+            The chain command also can work to link to iterables into one big iterator. Try using the chaining command to link two range functions together! If you would like, you an also convert to a list and print to check the results. <br><br>
+            Solution:<br><br>
+
+            <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)::</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
+</pre></div>
+
+
+        </h2>
+
+        <!-- Links to the other tutorial pages go here -->
+        <br>
+        <section class="next">
+        <a href='iterator_p3_interpreter.html' class="btn">Next</a>
+        </section>
+
+        <section class="previous">
+        <a href='iterator_p1_interpreter.html' class="btn">Previous</a>
+        </section>
+        <br>
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>

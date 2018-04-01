@@ -19,17 +19,21 @@ document.write('\
   <a href="#">Pipeline</a>\
   <a href="#">Case Match Else</a>\
   <a href="#">Iterators</a>\
-  <a href="#" class="subsection">First exposure</a>\
-  <a href="#" class="subsection">Iterator chaining</a>\
-  <a href="#" class="subsection">Iterator slicing</a>\
-  <a href="#" class="subsection">Lazy Evaluation</a>\
+  <div id="Iterator Subsection" class = "subsection">\
+    <a href="#" class="subsection">First exposure</a>\
+    <a href="#" class="subsection">Iterator chaining</a>\
+    <a href="#" class="subsection">Iterator slicing</a>\
+    <a href="#" class="subsection">Lazy Evaluation</a>\
+  </div>\
   <a href="#">Lazy Lists</a>\
-  <a href="#">Recrsive Factorial</a>\
-  <a href="#" class="subsection">Base Case</a>\
-  <a href="#" class="subsection">Recursive Step</a>\
-  <a href="#" class="subsection">Error Handling</a>\
-  <a href="#" class="subsection">Wildcard Pattern</a>\
-  <a href="#" class="subsection">Automatic Tail Call Optimization</a>\
+  <a href="#">Recursive Factorial</a>\
+  <div id="Recurse Fact Subsection" class = "subsection">\
+    <a href="#" class="subsection">Base Case</a>\
+    <a href="#" class="subsection">Recursive Step</a>\
+    <a href="#" class="subsection">Error Handling</a>\
+    <a href="#" class="subsection">Wildcard Pattern</a>\
+    <a href="#" class="subsection">Automatic Tail Call Optimization</a>\
+  </div>\
   <a href="#"><code>addpattern</code> Factorial</a>\
   <a href="#">Fibonacci</a>\
   <a href="#">Binary Tree</a>\
