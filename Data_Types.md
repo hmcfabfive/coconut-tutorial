@@ -13,10 +13,10 @@ data <name>(<args>) [from <inherits>]:
     <body>
 ```
 where
-*`<name>`: the name of your new data type
-*`<args>`: the arguments for the constructor and the names of the attributes 
-*`<inherits>`: (optional) other base classes to inherit from
-*`<body>`:  the data type's methods
+* `<name>`: the name of your new data type
+* `<args>`: the arguments for the constructor and the names of the attributes 
+* `<inherits>`: (optional) other base classes to inherit from
+* `<body>`:  the data type's methods
 
 *** 
 ### Page 2: Binary Trees and Methods
@@ -31,8 +31,8 @@ data Leaf(n)
 data Node(l, r)
 ```
 This allows us to declare data types such that:
-*`Leaf(n)` represents a leaf with the value n
-*`Node(l, r)` represents a node with children l and r
+* `Leaf(n)` represents a leaf with the value n
+* `Node(l, r)` represents a node with children l and r
 
 Now, suppose we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree as follows:
 ```
