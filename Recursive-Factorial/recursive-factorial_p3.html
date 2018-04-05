@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Recursive Factorial - Base Case | Coconut Tutorial</title>
+    <title>Recursive Factorial - Recursive Call | Coconut Tutorial</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
@@ -18,26 +18,33 @@
   <!-- Where the code for everything else on the page starts -->
   <div id="main-content">
     <div class="split left">
-        <h1>Base Case</h1>
+        <h1>Recursive Call</h1>
           <h2>
-            <p>Copy and paste this starter code into the interpreter:</p>
+            <p>Here's where we left off:</p>
   <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+      <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+      <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+          <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+              <span class="k">return</span> <span class="mi">1</span>
 
-  <span class="c1">#Test cases:</span>
+  <span class="c1"># Test cases:</span>
   <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
+  <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
   </pre></div>
-            <p>Let’s start the function by taking care of the base case, when n == 0.</p>
-            <p>Start a case block and make the first match statement match 0 which will check if n matches to 0. According to the definition of factorial, 0! = 1. Therefore, the program should return 1 if n matches to 0.</p>
-            <p>Run the code to make sure the test cases pass!</p>
+
+
+            <p>Copy and paste the starter code into the interpreter, implement
+              the recursive call, and then run the code to make sure the test
+              cases pass!
+            </p>
           </h2>
         <br>
         <section class="next">
-        <a href='recursive-factorial-p3.html' class="btn">Next</a>
+        <a href='recursive-factorial_p4.html' class="btn">Next</a>
         </section>
 
         <section class="previous">
-        <a href='recursive-factorial-p1.html' class="btn">Previous</a>
+        <a href='recursive-factorial_p2.html' class="btn">Previous</a>
         </section>
         <br>
     </div>
