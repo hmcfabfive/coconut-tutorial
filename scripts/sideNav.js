@@ -4,7 +4,7 @@
 // 3. Copy content of escapedSideNav.html
 // 4. Paste inside this this function
 // You can also just make edits to this file or escapedSideNav.html directly but
-// make sure you add a / to the end of this line. The provided directions
+// make sure you add a / to the end of each line. The provided directions
 // automates it to avoid error and allows you to edit with syntax highlighting
 
 document.write('\
@@ -16,23 +16,27 @@ document.write('\
 </div>\
 <div id="mySidenav" class="sidenav">\
   <a href="#">Home</a>\
-  <a href="#">Pipeline</a>\
+  <a href="http://localhost:8080/pipelines/pipe-operators.html">Pipelines</a>\
   <a href="#">Case Match Else</a>\
-  <a href="#">Iterators</a>\
-  <div id="Iterator Subsection" class = "subsection">\
-    <a href="#" class="subsection">First exposure</a>\
-    <a href="#" class="subsection">Iterator chaining</a>\
-    <a href="#" class="subsection">Iterator slicing</a>\
-    <a href="#" class="subsection">Lazy Evaluation</a>\
+  <a href="http://localhost:8080/Iterators/iterator_title.html">Iterators</a>\
+  <div class = "subsection">\
+    <a href="http://localhost:8080/Iterators/iterator_p1_interpreter.html">First exposure</a>\
+    <a href="http://localhost:8080/Iterators/iterator_p2_interpreter.html">Iterator chaining</a>\
+    <a href="http://localhost:8080/Iterators/iterator_p3_interpreter.html">Iterator slicing</a>\
+    <a href="http://localhost:8080/Iterators/iterator_p4_interpreter.html">Lazy Evaluation</a>\
   </div>\
-  <a href="#">Lazy Lists</a>\
-  <a href="#">Recursive Factorial</a>\
-  <div id="Recurse Fact Subsection" class = "subsection">\
-    <a href="#" class="subsection">Base Case</a>\
-    <a href="#" class="subsection">Recursive Step</a>\
-    <a href="#" class="subsection">Error Handling</a>\
-    <a href="#" class="subsection">Wildcard Pattern</a>\
-    <a href="#" class="subsection">Automatic Tail Call Optimization</a>\
+  <a href="http://localhost:8080/LazyList/lazylist_p1.html">Lazy Lists</a>\
+  <div class = "subsection">\
+    <a href="http://localhost:8080/LazyList/lazylist_p2.html">In Python</a>\
+    <a href="http://localhost:8080/LazyList/lazylist_p3.html">In Coconut</a>\
+  </div>\
+  <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
+  <div class = "subsection">\
+    <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p2.html">Base Case</a>\
+    <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p3.html">Recursive Call</a>\
+    <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p4.html">Error Handling</a>\
+    <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
+    <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
   </div>\
   <a href="#"><code>addpattern</code> Factorial</a>\
   <a href="#">Fibonacci</a>\
