@@ -31,7 +31,7 @@ document.write('\
     <a href="http://localhost:8080/LazyList/lazylist_p3.html">In Coconut</a>\
   </div>\
   <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
-  <div id="Recurse Fact Subsection" class = "subsection">\
+  <div class = "subsection">\
     <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p2.html">Base Case</a>\
     <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p3.html">Recursive Call</a>\
     <a href="http://localhost:8080/recursive-factorial/recursive-factorial_p4.html">Error Handling</a>\
