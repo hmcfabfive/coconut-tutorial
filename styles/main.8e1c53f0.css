@@ -51,6 +51,7 @@
 }
 @media only screen and (min-width:600px){
     .src-containers-__App-module___container{
+    /* when these are commented out, the display is vertical rather than horizontal */
         /* grid-template-columns:1fr 1fr;
         grid-template-rows:1fr;
         grid-template-areas:"editor output" */
