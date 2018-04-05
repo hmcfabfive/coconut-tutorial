@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <title>Pipe Operators| Coconut Tutorial</title>
+      <link href="../styles/main.8e1c53f0.css" rel="stylesheet">
+      <link rel="stylesheet" href="../styles/interpreter.css">
+      <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
+      <script src="../scripts/interpreter.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <div class="split left">
+      <h1>Pipe Operators</h1>
+    <h2>
+      <p>
+        Coconut’s pipe operators allow for pipeline-style function application,
+        which makes multiple function calls more readable.
+      </p>
+      <p>The different operators are:</p>
+      <div class="highlight"><pre><span></span><span class="p">(</span><span class="o">|&gt;</span><span class="p">)</span>    <span class="o">=&gt;</span> <span class="n">pipe</span> <span class="n">forward</span>
+<span class="p">(</span><span class="o">|*&gt;</span><span class="p">)</span>   <span class="o">=&gt;</span> <span class="n">multiple</span><span class="o">-</span><span class="n">argument</span> <span class="n">pipe</span> <span class="n">forward</span>
+<span class="p">(</span><span class="o">&lt;|</span><span class="p">)</span>    <span class="o">=&gt;</span> <span class="n">pipe</span> <span class="n">backward</span>
+<span class="p">(</span><span class="o">&lt;*|</span><span class="p">)</span>   <span class="o">=&gt;</span> <span class="n">multiple</span><span class="o">-</span><span class="n">argument</span> <span class="n">pipe</span> <span class="n">backward</span>
+</pre></div>
+      <p>
+        <em>Note: refer to the
+          <a href="http://coconut.readthedocs.io/en/develop/DOCS.html#operators">documentation</a>
+          for information about operator precedence and associativity.</em>
+      </p>
+      <p>Here's how function calls are structured in Coconut using pipes:</p>
+      <div class="highlight"><pre><span></span><span class="n">obj</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">attribute</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">func</span><span class="o">$</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+      </pre></div>
+      <p>Compare that to equivalent Python code:</p>
+      <div class="highlight"><pre><span></span><span class="n">func</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">attribute</span><span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">))[</span><span class="n">index</span><span class="p">]</span>
+      </pre></div>
+      <p>For a more concrete example, consider the following Python:</p>
+      <div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))))</span>
+      </pre></div>
+      <p>
+        This line of code filters out the even numbers on the interval 0 to 9, puts
+        them in a list, calculates the list’s sum, and prints the result.
+      </p>
+      <p>This is the same bit of code in Coconut:</p>
+      <div class="highlight"><pre><span></span><span class="p">((</span><span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="o">|*&gt;</span> <span class="nb">filter</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">sum</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+      </pre></div>
+      <p>
+        <em>Notice the use of the multiple-argument pipe forward operator
+        (<span class="o">|*&gt;</span>) to pass both the lambda and the list to filter.</em>
+      </p>
+      <p>
+        Here, the order of the function calls is the same in the code as it is in
+        the code’s description: filter, list, sum, and print. Coconut’s use of
+        pipeline style allows operations to be written in the order that they’re
+        performed, resulting in intuitive, readable code.
+      </p>
+    </h2>
+        <br>
+        <br>
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>
