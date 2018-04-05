@@ -22024,7 +22024,7 @@
     var r = n(120),
         i = n(121);
     t.a = function(e) {
-        return Object(r.a)("".concat("https://coconut-interpreter-flask.herokuapp.com", "/coconut"), {
+        return Object(r.a)("".concat("https://avaipc65g5.execute-api.us-east-1.amazonaws.com/production", "/coconut"), {
             method: "POST",
             body: Object(i.a)(e)
         })
@@ -23535,4 +23535,4 @@
     };
     Boolean("localhost" === window.location.hostname || "[::1]" === window.location.hostname || window.location.hostname.match(/^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/))
 }]);
-//# sourceMappingURL=main.707883ab.js.map
+//# sourceMappingURL=main.944509b9.js.map
