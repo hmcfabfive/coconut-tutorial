@@ -12,11 +12,6 @@ body {
   line-height: 1.45;
   border-radius: 0.3rem; }
 
-a {
-  color:white;
-  text-decoration: none;
-}
-
 /* Header Formatting */
 h1 {
     color: green;
@@ -45,81 +40,6 @@ h3 {
     margin-right: 50px;
 }
 
-h4 {
-  font-weight: lighter;
-  font-size: 60px;
-    color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-align: center;
-}
-
-h5 {
-    font-weight: 200;
-    font-size: 30px;
-    color: white;
-    margin-left: 50px;
-    margin-right: 50px;
-        text-align: center;
-}
-
-h6 {
-  font-weight: 200;
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-
-}
-
-.menuRow {
-  margin-right:50px;
-  margin-left:50px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 3rem;
-/*  background-color: #2196F3;*/
-  padding: 3rem;
-  vertical-align: center;
-  margin-top: 20vh;
-
-
-}
-
-.grid-container:link {
-  color:white;
-}
-
-.grid-container > div {
-    display: grid;
-
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  font-size:20px;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-color:white;
-  text-decoration-color: rgb(255,255,255);
-  text-decoration: none;
-  text-align: center;
-  text-decoration: none;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
-}
-
-.grid-container > div:hover {
-  font-color:white;
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
-
 /* Button Formatting */
 .next {
 	position:absolute;
@@ -127,7 +47,7 @@ h6 {
 	right: 0px;
     width: 1rem;
     padding-right: 50px;
-	font-weight: 200;
+	font-weight: lighter;
     color: white;
 }
 
@@ -137,7 +57,7 @@ h6 {
 	left: 0px;
     width: 1rem;
     padding-right: 50px;
-	font-weight: 200;
+	font-weight: lighter;
     color: white;
 }
 
@@ -172,31 +92,7 @@ h6 {
   .btn + .btn {
    /* margin-left: 1rem;*/ }
 
-.btn-center {
-  display: grid;
-  margin-left:25vw;
-  margin-right:25vw;
-  margin-bottom: 1rem;
-  text-align:center;
-  padding-top:1rem;
-  padding-bottom:1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
-  .btn + .btn {
-   /* margin-left: 1rem;*/ }
-
 .btn:hover {
-  color: rgba(255, 255, 255, 0.8);
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
-
-  .btn-center:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
