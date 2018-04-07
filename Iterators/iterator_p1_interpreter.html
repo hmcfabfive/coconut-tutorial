@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
+      <script src="../scripts/main.js"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -38,9 +39,14 @@
           Now let's try combining this with Coconut's syntax. Let's take x as the following iterator: <br><br>
           <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
 </pre></div>
-          Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code.<br><br>
-          Solution:<br><br>
+          Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code. <br><br>
+
+          <div class="btn" onclick="showContent();">
+          	Solution:
+          </div>
+          <div id="solutionText">
           <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">print</span></pre></div>
+          </div>
           </p>
 
         </h2>
