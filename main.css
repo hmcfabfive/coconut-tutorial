@@ -1,0 +1,393 @@
+body {
+  background-image: linear-gradient(to right, #155799, #159957);
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content .highlight pre, .main-content pre {
+  padding: 0.8rem;
+  overflow: auto;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  border-radius: 0.3rem; }
+
+a {
+  color:white;
+  text-decoration: none;
+}
+
+/* Header Formatting */
+h1 {
+    color: green;
+    margin-left: 20px;
+}
+
+h1 {
+	font-weight: lighter;
+	font-size: 60px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2 {
+	font-weight: 200;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h3 {
+	font-weight: bolder;
+	text-align:right;
+    color: white;
+    margin-right: 50px;
+}
+
+h4 {
+  font-weight: lighter;
+  font-size: 60px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+h5 {
+    font-weight: 200;
+    font-size: 30px;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+        text-align: center;
+}
+
+h6 {
+  font-weight: 200;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.menuRow {
+  margin-right:50px;
+  margin-left:50px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3rem;
+/*  background-color: #2196F3;*/
+  padding: 3rem;
+  vertical-align: center;
+  margin-top: 20vh;
+
+
+}
+
+.grid-container:link {
+  color:white;
+}
+
+.grid-container > div {
+    display: grid;
+
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  font-size:20px;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-color:white;
+  text-decoration-color: rgb(255,255,255);
+  text-decoration: none;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.grid-container > div:hover {
+  font-color:white;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }
+
+/* Button Formatting */
+.next {
+	position:absolute;
+	margin-right: 50px;
+	right: 0px;
+    width: 1rem;
+    padding-right: 50px;
+	font-weight: 200;
+    color: white;
+}
+
+.previous {
+	position:absolute;
+	margin-left: 50px;
+	left: 0px;
+    width: 1rem;
+    padding-right: 50px;
+	font-weight: 200;
+    color: white;
+}
+
+.menubutton {
+	position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+	font-family: sans-serif;
+	font-weight: lighter;
+    color: white;
+}
+
+/*a {
+  color: #1e6bb8;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+*/
+
+.btn {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  .btn + .btn {
+   /* margin-left: 1rem;*/ }
+
+.btn-center {
+  display: grid;
+  margin-left:25vw;
+  margin-right:25vw;
+  margin-bottom: 1rem;
+  text-align:center;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  .btn + .btn {
+   /* margin-left: 1rem;*/ }
+
+.btn:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }
+
+  .btn-center:hover {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }
+
+@media screen and (min-width: 64em) {
+  .btn {
+    padding: 0.75rem 1rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .btn {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 42em) {
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem; }
+    .btn + .btn {
+      margin-top: 1rem;
+      margin-left: 0; } }
+
+
+/* Link Formatting */
+a:hover, a:focus {
+  color: white;
+  text-decoration: none;
+
+}
+
+a.homepage {
+  font-size: 10px;
+}
+
+a.basemenu {
+  font-size: 10px;
+}
+
+a.sectiontitle {
+  font-size: 10px;
+}
+
+a.tutorial {
+  font-size: 8px;
+}
+
+
+.square-service-block{
+	position:relative;
+	overflow:hidden;
+	margin:15px auto;
+	/*padding-bottom: 1rem;*/
+	padding-left: calc(6.25vw + 1rem);
+
+	font-family: sans-serif;
+	font-weight: lighter;
+    color: white;
+	}
+.square-service-block a {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  display: block;
+  padding: 60px 25vw;
+  text-align: center;
+  width: 30%;
+  	font-family: sans-serif;
+	font-weight: lighter;
+	color: white;
+}
+.square-service-block a:hover{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  	font-family: sans-serif;
+	font-weight: lighter;
+    color: white;
+}
+
+.ssb-icon {
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  margin: 0 0 20px;
+}
+
+h2.ssb-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 200;
+  margin:0;
+  padding:0;
+  text-transform: uppercase;
+}
+
+/* begin hambuger and sidenav code */
+
+/* holds the three bars for the hamburger */
+.container {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    margin-left: 50px;
+    width: 35px;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+/* styling for the hamburger bars */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+    z-index: 10;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* styling for the nav */
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+/* styling for the links within the nav */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #061a2d;
+    display: block;
+    transition: 0.15s;
+}
+
+.subsection a {
+    padding: 8px 8px 8px 45px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #061a2d;
+    display: block;
+    transition: 0.15s;
+}
+
+.sidenav a:hover {
+    color: #818181;
+}
+
+/* something w3schools added to make the nav nicer on small screens */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} */
+
+/* makes the main content of the page move over when the nav opens */
+#main-content {
+    transition: 0.5s;
+    padding: 20px;
+    transition: 0.5s;
+}
+
+/* end hambuger and sidenav code */
