@@ -1,8 +1,10 @@
 # Lazy Lists
 
-Lazy lists are one of the most fundamental aspects of Functional Programming because they allow us to define and create infinite lists. In Coconut, there are two ways to define lazy lists. The first is to use "banana brackets" `(| |)` and the second is to concatenate objects using the iterator chaining `::` operator. The reason this second method works is that in Coconut lazy lists are actually just lazily evaluated iterator literals, similar to the ones seen in the more advanced iterator chaining and slicing sections. It means that the values of the list itself are not stored, but the iterables are. The expressions will not be evaluated until a particular element is needed.
+Lazy lists are one of the most fundamental aspects of Functional Programming because they allow us to define and create infinite lists. In Coconut, there are two ways to define lazy lists. The first is to use "banana brackets" (| |) and the second is to concatenate objects using the iterator chaining :: operator. The reason this second method works is that in Coconut lazy lists are actually just lazily evaluated iterator literals, similar to the ones seen in the more advanced iterator chaining and slicing sections. It means that the values of the list itself are not stored, but the iterables are. The expressions will not be evaluated until a particular element is needed. 
 
-Let us consider the Fibonacci sequence. In a simple Python program, we might write a recursive program for Fibonacci by doing 
+Let's apply lazy lists to the Fibonacci Sequence. Recall that the Fibonacci sequence is a series in which each number is the sum of the two preceding numbers: 1, 1, 2, 3, 5, etc. We're using the Fibonacci series because it is infinite in length. Since Lazy Lists are perfect for generating infinite lists, the Fibonacci series serves well as an example implementation.
+
+Let's start with the basics: writing a Fibonacci program that calculates the nth Fibonacci number using simple recursion in Python. 
 
 
 ```python
@@ -12,9 +14,9 @@ Let us consider the Fibonacci sequence. In a simple Python program, we might wri
  		else: return fib(x-1) + fib(x-2)
 ```
 
-but since Python does not have lazy evaluation, what it is really doing is calculating every Fibonacci number up until n. A very inefficient approach to representing the Fibonacci numbers!
+Since Python does not have lazy evaluation, what this is really doing is calculating every Fibonacci number up until n. A very inefficient approach to the Fibonacci numbers!
 
-Another approach to Fibonacci numbers involves creating an infinite lists of iterators. In Python, we can write a generator to do this:
+Another approach to generating Fibonacci numbers involves creating an infinite lists of iterators. In Python, we can write a generator to do this: 
 
 ```python
 	def fib():
@@ -23,9 +25,9 @@ Another approach to Fibonacci numbers involves creating an infinite lists of ite
         		yield a
         		a, b = b, a + b
 ```
-which essentially creates an infinite list of Fibonacci numbers. The downside of writing a generator in Python 3 is that in order to access the nth element, we have to call `next(itertools.islice( fib(), n, None))` which requires knowledge of the itertools library, and is not simple at all.
+which essentially creates an infinite list of Fibonacci numbers. The downside of writing a generator in Python 3 is that in order to access the nth element, we have to call `next(itertools.islice( fib(), n, None))` which requires the itertools library, and is not intuitive.
 
-Since Coconut attempts to bring more elegant functional programming to Python, we can contrast a Coconut implementation of infinite lists to the Python implementations. Here’s the code for defining an infinite list representing the Fibonacci series in Coconut:
+Since Coconut attempts to bring more elegant functional programming to Python, we can contrast a Coconut implementation of infinite lists to the Python implementations of infinite lists. Here’s the code for defining an infinite list representing the Fibonacci series in Coconut:
 
 ```python
 	def fib() = (0, 1) :: map ((+), fib(), fib()$[1:])
