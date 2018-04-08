@@ -1,6 +1,6 @@
 # Pipeline
 
-Coconut provides support for and in many ways is centered around the use of the pipe operator and pipeline-style function application. The word pipeling is indicative of what these operators do: data processing elements and functions are connected and series with the output of one become the input of the next. This makes multiple function calls more readable and simpler to implement.
+Coconut provides support for, and in many ways is centered around the use of the pipe operator and pipeline-style function application. The word pipelining is indicative of what these operators do: data processing elements and functions are connected in series with the output of one becoming the input of the next. This makes multiple function calls more readable and simpler to implement.
 
 The different operators supported by Ccoconut are:
 ```python
