@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
+      <script src="../scripts/main.js"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -26,13 +27,17 @@
         <h2>
             <p> With Coconut's iterator chaining and slicing also comes the idea of lazy evaluation. This is the idea that nothing is evaluated until it is needed. Take a look at the following function definition: <br>
 
+            <code>
             <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">,)</span> <span class="p">::</span> <span class="n">x</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
+            </code>
 
-            At first glance this probably looks like a recipe for an infinite loop. It is an instruction to create an infinite sequence starting at the input provided. However, if used properly in Coconut, such a function will not lead you into an infinite loop. Try defining this function and entering the following command into Coconut: <br><br>
+            This is an instruction to create an infinite sequence starting with the input provided. However, if used properly in Coconut, such a function will not lead you into an infinite loop. Try defining this function and entering the following command into Coconut: <br><br>
 
+            <code>
             <div class="highlight"><pre><span></span><span class="n">x</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="err">$</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
 </pre></div>
+            </code>
 
             The command instructs Coconut to create the iterator for a sequence starting at 5. It then uses the iterator slicing functionality to take the first 5 elements to be iterated over, converts them to a list and prints them. Since the evaluation was lazy, Coconut did not have to go into an infinite loop to define the entire iterator, and instead only dealt with the part we explicitly asked it for.<br><br>
 
