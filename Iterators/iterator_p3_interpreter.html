@@ -4,7 +4,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
       <meta name="theme-color" content="#000000">
-      <title>Iterator chaining: Basic Syntax| Iterators | Coconut Tutorial</title>
+      <title>Iterator slicing: Basic Syntax | Iterators | Coconut Tutorial</title>
       <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
@@ -28,8 +28,7 @@
             <p> Take the cookiebox example from earlier. If one wanted to retrieve a few cookies from the box, one way to do that would be through iterator slicing. Take the following as an example: <br>
 
             <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">
-            &quot;sugar&quot;</span><span class="p">,</span> <span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
+            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">,</span> <span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
 <span class="n">subbox</span> <span class="o">=</span> <span class="n">cookiebox</span><span class="err">$</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 </pre></div>
             </code>
