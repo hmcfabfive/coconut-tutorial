@@ -7,28 +7,28 @@ This section of tutorial will be focused on iterators. If you are unfamiliar wit
 Python's iterator functionality can be complex and a bit difficult to use. A good chunk of it comes from itertools, which is a module that implements several iterator building blocks inspired by functional programming languages from Haskell and APL. Coconut simplifies many of these features and treats them as built-ins rather than add-ons., making using iterators easier and more effective.
 
 ***
-### Page 1: First exposure -> python iterators
+### Page 1: First exposure: python iterators
 
-Let's start by entering the following list of cookie types into our Coconut interpreter:
+Let's start by making a list of cookie types, converting it into an iterator, and entering it into our Coconut interpreter:
 ```
-x = iter(["chocolate chip", "oatmeal raisin", "sugar"])
+cookiebox = iter(["chocolate chip", "oatmeal raisin", "sugar"])
 ```
-This might be familiar, this is how to take an iterable object and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same
+This is how to take an iterable object, such as a list, and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same. Try entering the following command into the interpreter a few times to iterate through the cookiebox.
 ```
-x.next()
+cookiebox.next()
 Output('chocolate chip')
-x.next()
+cookiebox.next()
 Output('oatmeal raisin')
-x.next()
+cookiebox.next()
 Output('sugar')
-x.next()
+cookiebox.next()
 Output('Traceback (most recent call last):
   File "<string>", line 1, in <module>
 StopIteration')
 ```
 
 
-Now let's try combining this with Coconut's syntax. Let's take x as following iterator:
+Now let's try combining this with Coconut's syntax. Let's start by defining x as the following iterator:
 ```
 x = iter([1, 2, 3])
 ```
