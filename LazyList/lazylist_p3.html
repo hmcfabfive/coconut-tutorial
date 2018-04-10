@@ -22,10 +22,9 @@
       <h2>
         <p>Since Coconut attempts to bring more elegant functional programming to Python, we can contrast a Coconut implementation of infinite lists to the Python implementations of infinite lists. Here’s the code for defining an infinite list representing the Fibonacci series in Coconut:
           <br>
-      <code>
       </ul>
-        <div class="highlight"><pre><span class="k">def</span> <span class="nf">fib</span><span class="p">()</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="p">:</span> <span class="nb">map</span> <span class="p">((</span><span class="o">+</span><span class="p">),</span> <span class="n">fib</span><span class="p">(),</span> <span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
-</pre></div></code>
+        <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fib</span><span class="p">()</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="p">:</span> <span class="nb">map</span> <span class="p">((</span><span class="o">+</span><span class="p">),</span> <span class="n">fib</span><span class="p">(),</span> <span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+</code></pre></div>
       Note the use of the iterator chaining operator :: in this case to form the list.
       <br><br>
       Let’s break down this code, step-by-step to understand what exactly is going here. First, we defined our first two Fibonacci numbers to be (0,1) and we used the :: operator to concatenate the rest of the Fibonacci sequence. We use a higher order function map, by applying the (+) arithmetic operator in fib() and the rest of the elements fib()$[1:]
@@ -38,7 +37,13 @@
     <section class="previous"">
     <a href='lazylist_p1.html' class="btn">Previous</a>
     </section>
-
+    
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+      room: 'evhub/coconut'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
     
   </div>
     <div class="split right" id="root"></div>

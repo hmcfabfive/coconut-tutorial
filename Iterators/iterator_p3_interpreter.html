@@ -27,11 +27,9 @@
         <h2>
             <p> Take the cookiebox example from earlier. If one wanted to retrieve a few cookies from the box, one way to do that would be through iterator slicing. Take the following as an example: <br>
 
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">,</span> <span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
+            <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">,</span> <span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
 <span class="n">subbox</span> <span class="o">=</span> <span class="n">cookiebox</span><span class="err">$</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
-</pre></div>
-            </code>
+</code></pre></div>
              
             Here, the $ operator is used with the square brackets to indicate that we want to slice the iterator, or cut a section out of it to use. Try printing both subbox and cookiebox out to see how this worked. <br><br>
 
@@ -41,22 +39,18 @@
             Show Solution:
           </div>
           <div id="solutionText" style="display:none">
-          <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
+
+            <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
 <span class="n">subbox</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
-</pre></div>
-          </code>
+</code></pre></div>
           </div>
 
             <br>From this we see that the first two elements of cookiebox were transferred over to subbox. However, it is also clear that the original cookiebox iterator was not preserved. <br><br>
             One feature of Coconut's iterator slicing that is not Present in Python is the ability to use negative indices in slicing.<br><br>
 
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">)</span>
+            <div class="highlight"><pre><code><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="s2">&quot;abc&quot;</span><span class="p">)</span>
 <span class="n">a</span><span class="err">$</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">|&gt;</span> <span class="k">print</span>
-</pre></div>
-            </code>
-
+</code></pre></div>
             This would be a lot more complicated to do in Python.
             </p>
 
@@ -72,6 +66,14 @@
         <a href='iterator_p2_interpreter.html' class="btn">Previous</a>
         </section>
         <br>
+
+        <script>
+          ((window.gitter = {}).chat = {}).options = {
+          room: 'evhub/coconut'
+          };
+        </script>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+        
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->

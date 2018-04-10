@@ -33,11 +33,10 @@
 
             Enter the following two lines into the Coconut interpreter: <br>
 
-            <code>
-              <div class="highlight"><pre><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+              <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="kd">data</span> <span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
-</pre></div>
-            </code>
+</code></pre></div>
+
 
           This allows us to declare data types such that:
           <ul>
@@ -47,30 +46,26 @@
 
           Now suppose that we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree as follows:<br><br>
 
-          <code>
-            <div class="highlight"><pre><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
+
+            <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="ni">self</span><span class="p">):</span>
       <span class="l">return</span> <span class="n">0</span>
-</pre></div>
-          </code> 
+</code></pre></div>
+
 
           Alternatively, methods can be applied to existing data types as follows:<br><br>
 
-          <code>
-            <div class="highlight"><pre><span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
+            <div class="highlight"><pre><code>?<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">=</span> <span class="n">1</span>
 
 <span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span> <span class="o">=</span> <span class="nf">size</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">+</span> <span class="nf">size</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-</pre></div>
-          </code> 
+</code></pre></div>
 
           Finally, let's put all of these elements into action with the following binary tree. Copy and paste the following code to make a binary tree with an empty left child node, a leaf with value 10 on the right, and finally to find its size. <br><br>
 
-          <code>
-            <div class="highlight"><pre><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span>
-</pre></div>
-          </code> 
+            <div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span>
+</code></pre></div>
 
           You should find that because the node has only one leaf, the size of this entire tree becomes 1. 
 
@@ -86,6 +81,14 @@
         <a href='datatypes_p2.html' class="btn">Previous</a>
         </section>
         <br>
+
+        <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'evhub/coconut'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->
