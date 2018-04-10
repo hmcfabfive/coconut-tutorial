@@ -31,6 +31,7 @@
       <span class="l">return</span> <span class="n">1</span>
     <span class="k">else</span> <span class="p">:</span>
       <span class="l">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">2</span><span class="p">)</span><span class="o"> + </span><span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="p">)</span></code></pre></div>
+    </p>
 
       <p>Since Python does not have lazy evaluation, what this is really doing is calculating every Fibonacci number up until n. A very inefficient approach to the Fibonacci numbers!
       <br><br>
@@ -44,7 +45,7 @@
 </code></pre></div>
 
     which essentially creates an infinite lists of Fibonacci numbers. The downside of writing a generator in Python 3 is that in order to access the nth element, we have to call next(itertools.islice( fib(), n, None)) which requires the itertools library, and is not intuitive.
-  </p>
+  </p></h2>
 
     <section class="previous"">
     <a href='lazylist_p1.html' class="btn">Previous</a>
