@@ -35,13 +35,13 @@ document.write('\
     <a href="../DataTypes/datatypes_p1.html">Syntax</a>\
     <a href="../DataTypes/datatypes_p1.html">Binary Trees</a>\
   </div>\
-  <a href="../recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
+  <a href="../Recursive-Factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
   <div class = "subsection">\
-    <a href="../recursive-factorial/recursive-factorial_p2.html">Base Case</a>\
-    <a href="../recursive-factorial/recursive-factorial_p3.html">Recursive Call</a>\
-    <a href="../recursive-factorial/recursive-factorial_p4.html">Error Handling</a>\
-    <a href="../recursive-factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
-    <a href="../recursive-factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p2.html">Base Case</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p3.html">Recursive Call</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p4.html">Error Handling</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
   </div>\
   <a href="#"><code>addpattern</code> Factorial</a>\
   <a href="#">Fibonacci</a>\
