@@ -4,12 +4,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
       <meta name="theme-color" content="#000000">
-      <title>Iterators - Iterator chaining: Basic Syntax | Coconut Tutorial</title>
+      <title>Iterator chaining: Basic Syntax| Iterators | Coconut Tutorial</title>
       <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
-      <script src="../scripts/main.js"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -27,25 +26,19 @@
         <h2>
             <p> Let's start with two iterables, in this case, two lists of cookie types. <br>
 
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">box1</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
+            <div class="highlight"><pre><code><span></span><span class="n">box1</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
 <span class="n">box2</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
-</pre></div>
-            </code>
+</code></pre></div>
              
             We're going to consolidate these two iterables into one iterable using iterator chaining, so we can treat the two sequences as though they were one long sequence. In Python, this is done using the itertools.chain() functionality.<br><br>
 
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">chain</span><span class="p">(</span><span class="n">box1</span><span class="p">,</span> <span class="n">box2</span><span class="p">)</span>
-</pre></div>
-            </code>
+            <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">chain</span><span class="p">(</span><span class="n">box1</span><span class="p">,</span> <span class="n">box2</span><span class="p">)</span>
+</code></pre></div>
 
             In Coconut this is simplified by using the :: operator. <br><br>
 
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">box1</span> <span class="p">::</span> <span class="n">box2</span>
-</pre></div>
-            </code>
+            <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">box1</span> <span class="p">::</span> <span class="n">box2</span>
+</code></pre></div>
 
             The :: command tells Coconut to link the two iterators. <br>
 
@@ -57,12 +50,11 @@
             Show Solution:
             </div>
             <div id="solutionText" style="display:none">
-            <code>
-            <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)::</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
+
+            <div class="highlight"><pre><code><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">15</span><span class="p">)::</span><span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">25</span><span class="p">)</span>
 <span class="n">x</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
-</pre></div>
+</code></pre></div>
             </div>
-            </code>
 
         </h2>
 
@@ -76,6 +68,14 @@
         <a href='iterator_p1_interpreter.html' class="btn">Previous</a>
         </section>
         <br>
+
+        <script>
+          ((window.gitter = {}).chat = {}).options = {
+          room: 'evhub/coconut'
+          };
+        </script>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+        
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->

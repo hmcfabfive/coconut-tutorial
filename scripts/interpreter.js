@@ -25,3 +25,13 @@ function toggleNav() {
     hamburger.style.marginLeft = "275px";
   }
 }
+
+// toggle hide/show for solutions
+function showContent(){
+  var x = document.getElementById("solutionText")
+  if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}

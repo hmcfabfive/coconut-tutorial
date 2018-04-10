@@ -15,10 +15,10 @@ document.write('\
   <div class="bar3"></div>\
 </div>\
 <div id="mySidenav" class="sidenav">\
-  <a href="#">Home</a>\
+  <a href="../index.html">Home</a>\
   <a href="../Pipelines/pipe-operators.html">Pipelines</a>\
   <a href="#">Case Match Else</a>\
-  <a href="../Iterators/iterator_title">Iterators</a>\
+  <a href="../Iterators/iterator_title.html">Iterators</a>\
   <div class = "subsection">\
     <a href="../Iterators/iterator_p1_interpreter.html">First exposure</a>\
     <a href="../Iterators/iterator_p2_interpreter.html">Iterator chaining</a>\
@@ -29,6 +29,11 @@ document.write('\
   <div class = "subsection">\
     <a href="../LazyList/lazylist_p2.html">In Python</a>\
     <a href="../LazyList/lazylist_p3.html">In Coconut</a>\
+  </div>\
+    <a href="../DataTypes/datatypes_p1.html">Data Types</a>\
+  <div class = "subsection">\
+    <a href="../DataTypes/datatypes_p1.html">Syntax</a>\
+    <a href="../DataTypes/datatypes_p1.html">Binary Trees</a>\
   </div>\
   <a href="../recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
   <div class = "subsection">\

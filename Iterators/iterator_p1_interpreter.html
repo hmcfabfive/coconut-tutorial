@@ -4,12 +4,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
       <meta name="theme-color" content="#000000">
-      <title>Iterators - First Exposure: Python Iterators | Coconut Tutorial</title>
+      <title>First Exposure: Python Iterators | Coconut Tutorial</title>
       <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
-      <script src="../scripts/main.js"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -27,22 +26,16 @@
         <h2>
           <p> Let's start by making a list of cookie types, converting it into an iterator, and entering it into our Coconut interpreter: <br>
 
-          <code>
-            <div class="highlight"><pre><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
-</pre></div>
-          </code>
+            <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;chocolate chip&quot;</span><span class="p">,</span> <span class="s2">&quot;oatmeal raisin&quot;</span><span class="p">,</span> <span class="s2">&quot;sugar&quot;</span><span class="p">])</span>
+</code></pre></div>
      
           This is how to take an iterable object, such as a list, and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same. Try entering the following command into the interpreter a few times to iterate through the cookiebox. <br><br>
-          <code>
-          <div class="highlight"><pre><span></span><span class="n">cookiebox</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
-</pre></div>
-		  </code>
+          <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span><span class="o">.</span><span class="n">next</span><span class="p">()</span>
+</code></pre></div>
 
           Now let's try combining this with Coconut's syntax. Let's start by defining x as the following iterator: <br><br>
-          <code>
-          <div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-</pre></div>
-		  </code>
+          <div class="highlight"><pre><code><span></span><span class="n">x</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+</code></pre></div>
           Using Coconut's pipeline syntax, convert the iterator back into a list, and print the result. This should only take one line of code. <br><br>
 
           <!-- Show solution button -->
@@ -69,6 +62,14 @@
         <a href='iterator_title.html' class="btn">Previous</a>
         </section>
         <br>
+
+        <script>
+          ((window.gitter = {}).chat = {}).options = {
+          room: 'evhub/coconut'
+          };
+        </script>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->
