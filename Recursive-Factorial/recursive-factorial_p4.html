@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Recursive Factorial - Error Handling | Coconut Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="../styles/main.8e1c53f0.css">
+    <link rel="stylesheet" href="../styles/interpreter.css">
+    <link rel="stylesheet" href="../styles/pygments.css">
+    <script src="../scripts/interpreter.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <div class="split left">
+        <h1>Error Handling</h1>
+          <h2>
+            <p>Copy and paste!</p>
+<div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">match</span> <span class="n">x</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Test cases:</span>
+<span class="o">-</span><span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
+<span class="mi">0.5</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
+<span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
+<span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
+</code></pre></div>
+
+
+            <p>Run the code and observe!</p>
+          </h2>
+        <br>
+        <section class="next">
+        <a href='recursive-factorial_p5.html' class="btn">Next</a>
+        </section>
+
+        <section class="previous">
+        <a href='recursive-factorial_p3.html' class="btn">Previous</a>
+        </section>
+        <br>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+      room: 'evhub/coconut'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <title>Iterator chaining: Lazy Evualation | Iterators | Coconut Tutorial</title>
+      <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
+      <link rel="stylesheet" href="../styles/interpreter.css">
+      <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
+      <script src="../scripts/interpreter.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <!-- Page Content goes here -->
+    <div class="split left">
+        <h1>
+            <p> Iterator chaining: Lazy Evaluation</p>
+        </h1>
+
+        <h2>
+            <p> With Coconut's iterator chaining and slicing also comes the idea of lazy evaluation. This is the idea that nothing is evaluated until it is needed. Take a look at the following function definition: <br>
+
+            <div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">x</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span><span class="p">,)</span> <span class="p">::</span> <span class="n">x</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+
+
+            This is an instruction to create an infinite sequence starting with the input provided. However, if used properly in Coconut, such a function will not lead you into an infinite loop. Try defining this function and entering the following command into Coconut: <br><br>
+
+            <div class="highlight"><pre><code><span></span><span class="n">x</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="err">$</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="k">print</span>
+</code></pre></div>
+
+            The command instructs Coconut to create the iterator for a sequence starting at 5. It then uses the iterator slicing functionality to take the first 5 elements to be iterated over, converts them to a list and prints them. Since the evaluation was lazy, Coconut did not have to go into an infinite loop to define the entire iterator, and instead only dealt with the part we explicitly asked it for.<br><br>
+
+            If we were to try to use lazy evaluation in this way in Python, it would be incredibly complicated, and it would require you to understand iterators and their functionality in Python on a very deep level. If you would like to get an idea for what this would look like, simply copy that one-line function definition above into a Coconut file and compile it to Python.<br><br>
+
+            To see a more complex implementation of chaining in coconut, look at Lazy Lists!
+             </p>
+
+        </h2>
+
+        <!-- Links to the other tutorial pages go here -->
+        <br>
+        <section class="next">
+        <a href='../LazyList/lazylist_p1.html' class="btn">Next</a>
+        </section>
+
+        <section class="previous">
+        <a href='iterator_p3_interpreter.html' class="btn">Previous</a>
+        </section>
+        <br>
+        <script>
+          ((window.gitter = {}).chat = {}).options = {
+          room: 'evhub/coconut'
+          };
+        </script>
+        <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>

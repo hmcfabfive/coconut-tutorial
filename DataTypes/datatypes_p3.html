@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      <meta name="theme-color" content="#000000">
+      <title>Binary Trees: Data Types | Coconut Tutorial</title>
+      <link rel="stylesheet" href="../styles/main.8e1c53f0.css" >
+      <link rel="stylesheet" href="../styles/interpreter.css">
+      <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
+      <script src="../scripts/interpreter.js"></script>
+      <script src="../scripts/main.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <!-- Page Content goes here -->
+    <div class="split left">
+        <h1>
+          <p> Ex: Binary Trees </p>
+        </h1>
+
+        <h2>
+          <p> Let's start by creating a basic data type to represent a binary tree. <br>
+
+            Recall that a binary tree has two main components: nodes and leaves, where each node leads to either 0, 1, or 2 other nodes, and nodes that lead to no other nodes (i.e. has no children) are called leaves. <br>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/192px-Binary_tree.svg.png" alt="Binary Tree"> <br>
+
+            Enter the following two lines into the Coconut interpreter: <br>
+
+              <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="kd">data</span> <span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
+</code></pre></div>
+
+
+          This allows us to declare data types such that:
+          <ul>
+            <li> <code>Leaf(n)</code> represents a leaf with the value <code>n</code></li>
+            <li> <code>Node(l, r)</code> represents a node with children <code>l</code> and <code>r</code></li>
+          </ul>
+
+          Now suppose that we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree as follows:<br><br>
+
+
+            <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="ni">self</span><span class="p">):</span>
+      <span class="l">return</span> <span class="n">0</span>
+</code></pre></div>
+
+
+          Alternatively, methods can be applied to existing data types as follows:<br><br>
+
+            <div class="highlight"><pre><code>?<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">=</span> <span class="n">1</span>
+
+<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span> <span class="o">=</span> <span class="nf">size</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">+</span> <span class="nf">size</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</code></pre></div>
+
+          Finally, let's put all of these elements into action with the following binary tree. Copy and paste the following code to make a binary tree with an empty left child node, a leaf with value 10 on the right, and finally to find its size. <br><br>
+
+            <div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span>
+</code></pre></div>
+
+          You should find that because the node has only one leaf, the size of this entire tree becomes 1. 
+
+        </h2>
+
+        <!-- Links to the other tutorial pages go here -->
+        <br>
+        <section class="next">
+        <a href='datatypes_p4.html' class="btn">Next</a>
+        </section>
+
+        <section class="previous">
+        <a href='datatypes_p2.html' class="btn">Previous</a>
+        </section>
+        <br>
+
+        <script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'evhub/coconut'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>
