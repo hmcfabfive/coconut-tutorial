@@ -71,6 +71,11 @@ h6 {
 
 }
 
+div.newmenu {
+  color:red;
+}
+
+
 .menuRow {
   margin-right:50px;
   margin-left:50px;
@@ -83,13 +88,25 @@ h6 {
 /*  background-color: #2196F3;*/
   padding: 3rem;
   vertical-align: center;
-  margin-top: 20vh;
+  /*margin-top: 20vh;*/
 
 
 }
 
 .grid-container:link {
   color:white;
+  z-index: 10;
+  display:block;
+  padding-top:4rem;
+  padding-bottom:4rem;
+}
+
+div.grid-container: a{
+  display:block;
+  height: 6rem;
+  padding-top:5rem;
+  padding-bottom:5rem;
+  z-index:10;
 }
 
 .grid-container > div {
@@ -109,9 +126,12 @@ h6 {
   text-decoration: none;
   text-align: center;
   text-decoration: none;
-  padding-bottom: 4rem;
-  padding-top: 4rem;
+  /*padding-bottom: 4rem;*/
+  /*padding-top: 4rem;*/
+
 }
+
+
 
 .grid-container > div:hover {
   font-color:white;
@@ -127,7 +147,7 @@ h6 {
 	right: 0px;
     width: 1rem;
     padding-right: 50px;
-	font-weight: 200;
+	font-weight: 600;
     color: white;
 }
 
@@ -137,7 +157,7 @@ h6 {
 	left: 0px;
     width: 1rem;
     padding-right: 50px;
-	font-weight: 200;
+	font-weight: 600;
     color: white;
 }
 
@@ -389,5 +409,36 @@ h2.ssb-title {
     padding: 20px;
     transition: 0.5s;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    color: white;
+    text-align: center;
+}
+
+ div.feature {
+        position: relative;
+    }
+
+    div.feature a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 100%; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
 
 /* end hambuger and sidenav code */
