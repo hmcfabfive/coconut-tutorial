@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pattern Matching - Your turn! | Coconut Tutorial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="../styles/main.8e1c53f0.css">
+    <link rel="stylesheet" href="../styles/interpreter.css">
+    <link rel="stylesheet" href="../styles/pygments.css">
+    <script src="../scripts/interpreter.js"></script>
+  </head>
+  <body><noscript>You need to enable JavaScript to run this app.</noscript>
+
+  <!-- Bit of code that includes the side nav -->
+  <script src="../scripts/sideNav.js"></script>
+
+  <!-- Where the code for everything else on the page starts -->
+  <div id="main-content">
+    <div class="split left">
+        <h1>Now you try it!</h1>
+          <h2>
+            <p>Write some code that will count up the number of aluminum, paper, and plastic items in this list:</p>
+<div class="highlight">items = iter(["aluminum", "plastic", "plastic", "plastic", "plastic", "paper", "plastic", "aluminum", "aluminum", "paper", "plastic"])</div>
+<br>
+
+
+            <div class="btn" onclick="showContent();">
+            Show Solution:
+          </div>
+          <div id="solutionText" style="display:none">
+            </p>
+            <div class="highlight">items = iter(["aluminum", "plastic", "plastic", "plastic", "plastic", "paper", "plastic", "aluminum", "aluminum", "paper", "plastic"])
+
+numAluminum = 0
+numPaper = 0
+numPlastic = 0
+
+def countItems(recyclable):
+    """count the items based on material"""
+    case (recyclable):
+      match recyclable == "aluminum":
+        numAluminum += 1
+      match recyclable is paper:
+          numPaper += 1
+      match recyclable is plastic:
+          numPlastic += 1
+    else:
+        raise TypeError("item not recyclable")
+
+while (items.hasNext()) :
+  countItems(items.next())
+
+"Number of aluminum items: "+numAluminum.toString() |> print
+"Number of paper items: "+numPaper.toString() |> print
+"Number of plastic items: "+numPlastic.toString() |> print
+</div>
+</div>
+          </h2>
+        <br>
+        <section class="next">
+        <a href='Patternmatch_p4.html' class="btn">Next</a>
+        </section>
+
+        <section class="previous">
+        <a href='Patternmatch_p2.html' class="btn">Previous</a>
+        </section>
+        <br>
+    <script>
+      ((window.gitter = {}).chat = {}).options = {
+      room: 'evhub/coconut'
+      };
+    </script>
+    <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+    
+    </div>
+    <div class="split right" id="root"></div>
+    <!-- Script for the interpreter -->
+    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
+  </div>
+
+  </body>
+
+</html>
