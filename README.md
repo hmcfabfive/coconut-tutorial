@@ -83,6 +83,6 @@ CS121 Team Panda Github
 Live Interpreter
 
 For more Coconut resources, see the following:
-[Coconut Github](https://github.com/evhub/coconut)
-[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)
-[Coconut Gitter](https://gitter.im/evhub/coconut)
+[Coconut Github](https://github.com/evhub/coconut)<br/>
+[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)<br/>
+[Coconut Gitter](https://gitter.im/evhub/coconut)<br/>
