@@ -57,7 +57,7 @@ Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom tha
 
 #### master
 
-The master branch contains the most recently files pertaining to the tutorial's web interface. These are the html files for the tutorial pages, the css styling files for the website and for functional elements of the tutorial, and the javascript files that help run additional functionality in the tutorial website.
+The master branch contains the most recently updated files pertaining to the tutorial's web interface. These are the html files for the tutorial pages, the css styling files for the website and for functional elements of the tutorial, and the javascript files that help run additional functionality in the tutorial website.
 
 #### gh-pages
 
