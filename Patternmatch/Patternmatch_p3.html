@@ -21,8 +21,9 @@
         <h1>Now you try it!</h1>
           <h2>
             <p>Write some code that will count up the number of aluminum, paper, and plastic items in this list:</p>
-<div class="highlight">items = iter(["aluminum", "plastic", "plastic", "plastic", "plastic", "paper", "plastic", "aluminum", "aluminum", "paper", "plastic"])</div>
-<br>
+<div class="highlight"><pre><span></span><span class="n">items</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;aluminum&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">,</span> <span class="s2">
+&quot;paper&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">,</span> <span class="s2">&quot;aluminum&quot;</span><span class="p">,</span> <span class="s2">&quot;aluminum&quot;</span><span class="p">,</span> <span class="s2">&quot;paper&quot;</span><span class="p">,</span> <span class="s2">&quot;plastic&quot;</span><span class="p">])</span>
+</pre></div>
 
 
             <div class="btn" onclick="showContent();">
@@ -30,31 +31,29 @@
           </div>
           <div id="solutionText" style="display:none">
             </p>
-            <div class="highlight">items = iter(["aluminum", "plastic", "plastic", "plastic", "plastic", "paper", "plastic", "aluminum", "aluminum", "paper", "plastic"])
+            <div class="highlight"><pre><span></span><span class="n">numAluminum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">numPaper</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">numPlastic</span> <span class="o">=</span> <span class="mi">0</span>
 
-numAluminum = 0
-numPaper = 0
-numPlastic = 0
+<span class="k">def</span> <span class="nf">countItems</span><span class="p">(</span><span class="n">recyclable</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;count the items based on material&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="p">(</span><span class="n">recyclable</span><span class="p">):</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="o">==</span> <span class="s2">&quot;aluminum&quot;</span><span class="p">:</span>
+        <span class="n">numAluminum</span> <span class="o">+=</span> <span class="mi">1</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">paper</span><span class="p">:</span>
+          <span class="n">numPaper</span> <span class="o">+=</span> <span class="mi">1</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">plastic</span><span class="p">:</span>
+          <span class="n">numPlastic</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;item not recyclable&quot;</span><span class="p">)</span>
 
-def countItems(recyclable):
-    """count the items based on material"""
-    case (recyclable):
-      match recyclable == "aluminum":
-        numAluminum += 1
-      match recyclable is paper:
-          numPaper += 1
-      match recyclable is plastic:
-          numPlastic += 1
-    else:
-        raise TypeError("item not recyclable")
+<span class="k">while</span> <span class="p">(</span><span class="n">items</span><span class="o">.</span><span class="n">hasNext</span><span class="p">())</span> <span class="p">:</span>
+  <span class="n">countItems</span><span class="p">(</span><span class="n">items</span><span class="o">.</span><span class="n">next</span><span class="p">())</span>
 
-while (items.hasNext()) :
-  countItems(items.next())
-
-"Number of aluminum items: "+numAluminum.toString() |> print
-"Number of paper items: "+numPaper.toString() |> print
-"Number of plastic items: "+numPlastic.toString() |> print
-</div>
+<span class="s2">&quot;Number of aluminum items: &quot;</span><span class="o">+</span><span class="n">numAluminum</span><span class="o">.</span><span class="n">toString</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+<span class="s2">&quot;Number of paper items: &quot;</span><span class="o">+</span><span class="n">numPaper</span><span class="o">.</span><span class="n">toString</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+<span class="s2">&quot;Number of plastic items: &quot;</span><span class="o">+</span><span class="n">numPlastic</span><span class="o">.</span><span class="n">toString</span><span class="p">()</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+</pre></div>
 </div>
           </h2>
         <br>

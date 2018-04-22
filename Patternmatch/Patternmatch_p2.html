@@ -2,13 +2,9 @@
 <html>
   <head>
     <title>Pattern Matching - Introduction | Coconut Tutorial</title>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="../styles/main.8e1c53f0.css">
-    <link rel="stylesheet" href="../styles/interpreter.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/pygments.css">
-    <script src="../scripts/interpreter.js"></script>
+    <script src="../scripts/main.js"></script>
   </head>
   <body>
 
@@ -24,18 +20,18 @@
       </h1>
       <h2>
         <p>Pattern matching is great for when you have lots of things that you want to act on based on their properties. At first glance, all that pattern matching does is reduce the amount of typing needed for if statements. And in some cases (such as this one) it doesn't even cut down on the typing! Here is how you would write the same function as before, but using pattern matching:</p>
-        <div class="highlight">def sortItems(recyclable):
-    """sort the items based on material"""
-    case (recyclable):
-      match recyclable is aluminum:
-        """execute code to put recyclable into the aluminum bin"""
-      match recyclable is paper:
-          """execute code to put recyclable into the paper bin"""
-      match recyclable is plastic:
-          """execute code to put recyclable into the plastic bin"""
-    else:
-        raise TypeError("item not recyclable")
-</div>
+        <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sortItems</span><span class="p">(</span><span class="n">recyclable</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;sort the items based on material&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="p">(</span><span class="n">recyclable</span><span class="p">):</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">aluminum</span><span class="p">:</span>
+        <span class="sd">&quot;&quot;&quot;execute code to put recyclable into the aluminum bin&quot;&quot;&quot;</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">paper</span><span class="p">:</span>
+          <span class="sd">&quot;&quot;&quot;execute code to put recyclable into the paper bin&quot;&quot;&quot;</span>
+      <span class="k">match</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">plastic</span><span class="p">:</span>
+          <span class="sd">&quot;&quot;&quot;execute code to put recyclable into the plastic bin&quot;&quot;&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;item not recyclable&quot;</span><span class="p">)</span>
+</pre></div>
 <p> As you can see above, we feed the parameter "recyclable" into what is known as a case-match statement. Each "match" line assesses how to handle "recyclable" based on its properties. In this example, pattern matching wasn't very effective, and had the same effect as just using if statements. But stay tuned to see some cases where pattern matching is really powerful! </p>
       </h2>
       <br>
@@ -46,7 +42,7 @@
         <section class="previous">
         <a href='Patternmatch_p1.html' class="btn">Previous</a>
         </section>
-      <br>
+      <p><br/><br/><br/><br/></p>
       <script>
       ((window.gitter = {}).chat = {}).options = {
       room: 'evhub/coconut'
