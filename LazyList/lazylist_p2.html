@@ -17,34 +17,40 @@
 
   <!-- Where the code for everything else on the page starts -->
   <div id="main-content">
-    <div class="split left">
       <h1>In Python</h1>
       <h2>
         <p>Let's start with the basics: writing a Fibonacci program that calculates the nth Fibonacci number using simple recursion in Python. 
           <br>
 
       </ul>
-        <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+        <div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">fib1</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-      <span class="l">return</span> <span class="n">0</span>
+        <span class="k">return</span> <span class="mi">0</span>
     <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-      <span class="l">return</span> <span class="n">1</span>
+        <span class="k">return</span> <span class="mi">1</span>
     <span class="k">else</span> <span class="p">:</span>
-      <span class="l">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">2</span><span class="p">)</span><span class="o"> + </span><span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">1</span><span class="p">)</span></code></pre></div>
+        <span class="k">return</span> <span class="n">fib1</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib1</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">fib1</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span> <span class="c1">#returns 6765</span></code></pre></div>
     </p>
 
       <p>Since Python does not have lazy evaluation, what this is really doing is calculating every Fibonacci number up until n. A very inefficient approach to the Fibonacci numbers!
       <br><br>
       Another approach to generating Fibonacci numbers involves creating an infinite lists of iterators. In Python, we can write a generator to do this:
 
-      <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fib</span><span class="p">():</span>
+      <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fib2</span><span class="p">():</span>
     <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
     <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>        
         <span class="k">yield</span> <span class="n">a</span>
         <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nb">next</span><span class="p">(</span><span class="n">itertools</span><span class="o">.</span><span class="n">islice</span><span class="p">(</span> <span class="n">fib2</span><span class="p">(),</span> <span class="n">20</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span> <span class="c1">#returns 6765</span>
 </code></pre></div>
 
-    which essentially creates an infinite lists of Fibonacci numbers. The downside of writing a generator in Python 3 is that in order to access the nth element, we have to call next(itertools.islice( fib(), n, None)) which requires the itertools library, and is not intuitive.
+    which essentially creates an infinite lists of Fibonacci numbers. The downside of writing a generator in Python 3 is that in order to access the nth element, we have to call <code>next(itertools.islice( fib(), n, None))</code> which requires the itertools library, and is not quite elegant.
+
+    <br><br>
+    In the next section, let's explore how Coconut can simplify our approach to the Fibonacci sequence.
   </p></h2>
 
     <section class="previous"">
@@ -62,10 +68,8 @@
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
   </div>
-    <div class="split right" id="root"></div>
-    <!-- Script for the interpreter -->
-    <script type="text/javascript" src="../scripts/main.707883ab.js"></script>
-  </div>
+
+
 
 
   </body>
