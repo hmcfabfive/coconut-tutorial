@@ -74,8 +74,8 @@ h6 {
 h7 {
   /*position:static;*/
   text-align: center;
-  margin-top:0px;
-  padding-top:0px;
+/*  margin-top:0px;
+  padding-top:0px;*/
 
   font-weight: 200;
   font-size: 40px;
@@ -90,10 +90,10 @@ h8 {
 }
 
 h9 {
-  padding-top:200px;
-  margin-top:200px;
-  margin-bottom:1rem;
-  padding-bottom:0px;
+/*  padding-top:200px;*/
+/*  margin-top:200px;
+  margin-bottom:1rem;*/
+/*  padding-bottom:0px;*/
   text-align:center;
   font-weight:9px;
   font-size:200;
@@ -669,7 +669,7 @@ bottom:20px;
     z-index: 0;
     top: 70%;
     overflow-x: hidden;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
 }
 
 .top {
