@@ -13,18 +13,16 @@ Let's start by making a list of cookie types, converting it into an iterator, an
 ```
 cookiebox = iter(["chocolate chip", "oatmeal raisin", "sugar"])
 ```
-This is how to take an iterable object, such as a list, and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same. Try entering the following command into the interpreter a few times to iterate through the cookiebox.
+This is how to take an iterable object, such as a list, and turn it into an iterator in Python. As we see, this, and the other basic iterator functionality from Python remains the same. Try entering the following command into the interpreter a few times to iterate through the cookiebox and print the results.
 ```
-cookiebox.next()
+next(cookiebox) |> print
 Output('chocolate chip')
-cookiebox.next()
+next(cookiebox) |> print
 Output('oatmeal raisin')
-cookiebox.next()
+next(cookiebox) |> print
 Output('sugar')
-cookiebox.next()
-Output('Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-StopIteration')
+next(cookiebox) |> print
+Output('StopIteration')
 ```
 
 
