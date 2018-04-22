@@ -30,17 +30,17 @@
 <span class="n">box2</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">([</span><span class="s2">&quot;shortbread&quot;</span><span class="p">,</span> <span class="s2">&quot;gingerbread&quot;</span><span class="p">])</span>
 </code></pre></div>
              
-            We're going to consolidate these two iterables into one iterable using iterator chaining, so we can treat the two sequences as though they were one long sequence. In Python, this is done using the itertools.chain() functionality.<br><br>
+            We're going to consolidate these two iterables into one iterable using iterator chaining, so we can treat the two sequences as though they were one long sequence. In Python, this is done using the <code>itertools.chain()</code> functionality.<br><br>
 
             <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">chain</span><span class="p">(</span><span class="n">box1</span><span class="p">,</span> <span class="n">box2</span><span class="p">)</span>
 </code></pre></div>
 
-            In Coconut this is simplified by using the :: operator. <br><br>
+            In Coconut this is simplified by using the <code>::</code> operator. <br><br>
 
             <div class="highlight"><pre><code><span></span><span class="n">cookiebox</span> <span class="o">=</span> <span class="n">box1</span> <span class="p">::</span> <span class="n">box2</span>
 </code></pre></div>
 
-            The :: command tells Coconut to link the two iterators. <br>
+            The <code>::</code> command tells Coconut to link the two iterators. <br>
 
             The chain command also can work to link to iterables into one big iterator. Try using the chaining command to link two range functions together! If you would like, you an also convert to a list and print to check the results. <br><br>
 
