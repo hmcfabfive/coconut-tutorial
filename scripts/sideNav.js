@@ -42,14 +42,15 @@ document.write('\
     <a href="../LazyList/lazylist_p2.html">In Python</a>\
     <a href="../LazyList/lazylist_p3.html">In Coconut</a>\
   </div>\
-  <a href="../recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
+  <a href="../Recursive-Factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
   <div class = "subsection">\
-    <a href="../recursive-factorial/recursive-factorial_p2.html">Base Case</a>\
-    <a href="../recursive-factorial/recursive-factorial_p3.html">Recursive Call</a>\
-    <a href="../recursive-factorial/recursive-factorial_p4.html">Error Handling</a>\
-    <a href="../recursive-factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
-    <a href="../recursive-factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p2.html">Base Case</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p3.html">Recursive Call</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p4.html">Error Handling</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
+    <a href="../Recursive-Factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
   </div>\
+</div>\
 </div>\
 \
 ');
