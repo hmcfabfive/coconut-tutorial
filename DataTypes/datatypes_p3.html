@@ -10,6 +10,7 @@
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
       <script src="../scripts/main.js"></script>
+      <script src="../scripts/codesnippets.js" type="text/javascript"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -33,9 +34,9 @@
 
             Enter the following two lines into the Coconut interpreter: <br>
 
-              <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+              <div class="stcode" <input id="dat1" type="button" value="clickme" onclick="setter(this.id,dat1);"/><div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 <span class="kd">data</span> <span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></div>
 
 
           This allows us to declare data types such that:
@@ -47,24 +48,24 @@
           Now suppose that we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree as follows:<br><br>
 
 
-            <div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
+            <div class="stcode" <input id="dat2" type="button" value="clickme" onclick="setter(this.id,dat2);"/><div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="ni">self</span><span class="p">):</span>
       <span class="l">return</span> <span class="n">0</span>
-</code></pre></div>
+</code></pre></div></div>
 
 
           Alternatively, methods can be applied to existing data types as follows:<br><br>
 
-            <div class="highlight"><pre><code>?<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
+            <div class="stcode" <input id="dat3" type="button" value="clickme" onclick="setter(this.id,dat3);"/><div class="highlight"><pre><code>?<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">=</span> <span class="n">1</span>
 
 <span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">))</span> <span class="o">=</span> <span class="nf">size</span><span class="p">(</span><span class="n">l</span><span class="p">)</span> <span class="o">+</span> <span class="nf">size</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></div>
 
           Finally, let's put all of these elements into action with the following binary tree. Copy and paste the following code to make a binary tree with an empty left child node, a leaf with value 10 on the right, and finally to find its size. <br><br>
 
-            <div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span>
+            <div class="stcode" <input id="dat4" type="button" value="clickme" onclick="setter(this.id,dat4);"/><div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span></code>
 </code></pre></div>
 
           You should find that because the node has only one leaf, the size of this entire tree becomes 1. 
@@ -74,7 +75,7 @@
         <!-- Links to the other tutorial pages go here -->
         <br>
         <section class="next">
-        <a href='datatypes_p4.html' class="btn">Next</a>
+        <a href='../Iterators/iterator_title.html' class="btn">Next</a>
         </section>
 
         <section class="previous">

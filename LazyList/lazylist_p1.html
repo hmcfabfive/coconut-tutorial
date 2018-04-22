@@ -18,15 +18,18 @@
       <h1>Lazy Lists: Introduction</h1>
   <h2>
     <p>
-      Lazy lists are one of the most fundamental aspects of Functional Programming because they allow us to define and create infinite lists. In Coconut, there are two ways to define lazy lists. The first is to use "banana brackets" (| |) and the second is to concatenate objects using the iterator chaining :: operator. The reason this second method works is that in Coconut lazy lists are actually just lazily evaluated iterator literals, similar to the ones seen in the more advanced iterator chaining and slicing sections. It means that the values of the list itself are not stored, but the iterables are. The expressions will not be evaluated until a particular element is needed.
+      Lazy lists are one of the most fundamental aspects of Functional Programming because they allow us to define and create infinite lists. In Coconut, there are two ways to define lazy lists. The first is to use "banana brackets" <code>(| |)</code> and the second is to concatenate objects using the iterator chaining <code>::</code> operator. In Coconut, lazy lists are refferred as lazily evaluated iterator literals, similar to the ones seen in the more advanced iterator chaining and slicing sections. It means that the values of the list itself are not stored, but the iterables are. The expressions will not be evaluated until a particular element is needed.
       <br><br>
-      Let's apply lazy lists to the Fibonacci Sequence. Recall that the Fibonacci sequence is a series in which each number is the sum of the two preceding numbers: 1, 1, 2, 3, 5, etc. We're using the Fibonacci series because it is infinite in length. Since Lazy Lists are perfect for generating infinite lists, the Fibonacci series serves well as an example implementation.
+      Let's apply lazy lists to the Fibonacci Sequence. Recall that the Fibonacci sequence is a series in which each number is the sum of the two preceding numbers: 1, 1, 2, 3, 5, etc. We're using the Fibonacci series because it is infinite in length. Since Lazy Lists are perfect for generating infinite lists, the Fibonacci series serves well as an example.
     </p>
     </h2>
       <br>
       <section class="next">
         <a href='lazylist_p2.html' class="btn">Next</a>
       </section>
+      <section class="previous">
+        <a href='../Iterators/iterator_p4_interpreter.html' class="btn">Previous</a>
+        </section>
       <br>
     </div>
   </body>
