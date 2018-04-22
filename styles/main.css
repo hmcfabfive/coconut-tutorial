@@ -260,7 +260,8 @@ div.grid-container: a{
   animation:opacityfade;
   animation-delay:0s;
   animation-duration:2s;
-  animation-fill-mode:forwards;}
+  animation-fill-mode:forwards;
+  cursor:pointer;}
   .btn + .btn {
    /* margin-left: 1rem;*/ 
    animation-direction:forwards;
@@ -274,6 +275,7 @@ div.grid-container: a{
 .btn-hover:hover {
   animation:buttonhover;
   animation-duration:0.2s;
+  cursor:pointer;
 }
 
 @keyframes buttonfade {
@@ -338,13 +340,15 @@ to {color: rgba(255, 255, 255, 0.8);
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
+  border-color: rgba(255, 255, 255, 0.3); 
+  cursor:pointer;}
 
   .btn-center:hover {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3); }
+  border-color: rgba(255, 255, 255, 0.3);
+  cursor:pointer;}
 
 /*.btn-animate:hover {
   animation:buttonhover;
