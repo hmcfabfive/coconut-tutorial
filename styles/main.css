@@ -71,6 +71,35 @@ h6 {
 
 }
 
+h7 {
+  /*position:static;*/
+  text-align: center;
+  margin-top:0px;
+  padding-top:0px;
+
+  font-weight: 200;
+  font-size: 40px;
+  color:rgba(255,255,255,0);
+}
+
+h8 {
+  text-align:center;
+  font-weight:100;
+  font-size: 20px;
+  color:rgba(255,255,255,0);
+}
+
+h9 {
+  padding-top:200px;
+  margin-top:200px;
+  margin-bottom:1rem;
+  padding-bottom:0px;
+  text-align:center;
+  font-weight:9px;
+  font-size:200;
+  color:rgba(255,255,255,0);
+}
+
 div.newmenu {
   color:red;
 }
@@ -88,6 +117,7 @@ div.newmenu {
 /*  background-color: #2196F3;*/
   padding: 3rem;
   vertical-align: center;
+  margin-bottom:10vh;
   /*margin-top: 20vh;*/
 
 
@@ -162,14 +192,20 @@ div.grid-container: a{
 }
 
 .menubutton {
-	position: absolute;
-        top: 50%;
+	
+        top: 20%;
         left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
+        /*margin-right: -50%;*/
+        /*transform: translate(-50%, -50%)*/
 	font-family: sans-serif;
-	font-weight: lighter;
-    color: white;
+  /*display:inline-block;*/
+	font-weight: normal;
+    /*color: white;*/
+    text-align:center;
+/*    animation:buttonfade;
+    animation-delay:5.5s;
+    animation-duration:1s;
+    animation-direction:forwards;*/
 }
 
 /*a {
@@ -178,6 +214,8 @@ div.grid-container: a{
   a:hover {
     text-decoration: underline; }
 */
+
+
 
 .btn {
   display: inline-block;
@@ -191,6 +229,92 @@ div.grid-container: a{
   transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
   .btn + .btn {
    /* margin-left: 1rem;*/ }
+.btn-animate {
+    display: inline-block;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+  animation:buttonfade;
+  /*animation-delay:0s;*/
+  /*animation-duration:4s;*/
+  animation-fill-mode:forwards;}
+  .btn + .btn {
+   /* margin-left: 1rem;*/ 
+   
+}
+.btn-hover {
+    display: inline-block;
+  /*margin-bottom: 1rem;*/
+  color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 0.3rem;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s; 
+  animation:opacityfade;
+  animation-delay:0s;
+  animation-duration:2s;
+  animation-fill-mode:forwards;}
+  .btn + .btn {
+   /* margin-left: 1rem;*/ 
+   animation-direction:forwards;
+}
+
+@keyframes opacityfade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+.btn-hover:hover {
+  animation:buttonhover;
+  animation-duration:0.2s;
+}
+
+@keyframes buttonfade {
+  0%{color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0)
+
+  }
+
+  75%{color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0);
+
+  }
+
+  100%{color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+
+  }
+}
+
+@keyframes stopanimation {
+  from{
+    animation-duration:4s;
+  }
+  to{
+    animation-duration:0s;
+  }
+}
+
+@keyframes buttonhover {
+
+from {color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);}
+to {color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }
+
+}
 
 .btn-center {
   display: grid;
@@ -222,8 +346,21 @@ div.grid-container: a{
   background-color: rgba(255, 255, 255, 0.2);
   border-color: rgba(255, 255, 255, 0.3); }
 
+/*.btn-animate:hover {
+  animation:buttonhover;
+  animation-fill-mode:initial;
+  animation-duration:0.2s;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3); }*/
+
 @media screen and (min-width: 64em) {
   .btn {
+    padding: 0.75rem 1rem; } }
+
+@media screen and (min-width: 64em) {
+  .btn-animate {
     padding: 0.75rem 1rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -231,8 +368,23 @@ div.grid-container: a{
     padding: 0.6rem 0.9rem;
     font-size: 0.9rem; } }
 
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .btn-animate {
+    padding: 0.6rem 0.9rem;
+    font-size: 0.9rem; } }
+
 @media screen and (max-width: 42em) {
   .btn {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 0.9rem; }
+    .btn + .btn {
+      margin-top: 1rem;
+      margin-left: 0; } }
+
+@media screen and (max-width: 42em) {
+  .btn-animate {
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -415,12 +567,19 @@ h2.ssb-title {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.1);
+
+
     border-color: rgba(255, 255, 255, 0.2);
     border-style: solid;
+    /*border-radius:0.3rem;*/
     border-width: 1px;
-    border-radius: 0.3rem;
-    color: white;
+    border-left-width:0px;
+    border-right-width:0px;
+    border-bottom-width:0px;
+    border-top-width:3px;
+    border-top-color:white;
+    background-image: linear-gradient(to right, #155799, #159957);
     text-align: center;
 }
 
@@ -442,3 +601,85 @@ h2.ssb-title {
     }
 
 /* end hambuger and sidenav code */
+
+
+@keyframes fade {
+  from {color: rgba(255,255,255,0);}
+  to {color: rgba(255,255,255,1);}
+  /*color: white;*/
+}
+
+
+
+.landingTitle {
+  text-align:center;
+  font-weight:bolder;
+  margin-top:-2vh;
+  font-size:200px;
+  font-weight:1px;
+  animation:fade;
+  animation-duration:6s;
+  animation-fill-mode:forwards;
+}
+
+.landingTitle2 {
+  /*text-align:center;*/
+  /*font-weight:bolder;*/
+  /*font-size:100px;*/
+bottom:20px;
+  animation:fade;
+  animation-duration:1s;
+  animation-delay:0.5s;
+  animation-fill-mode:forwards;
+  /*animation-play-state: running;*/
+}
+
+.landingTitle3 {
+  animation:fade;
+  animation-duration:1s;
+  animation-delay:1s;
+  animation-fill-mode:forwards;
+}
+
+.landingTitle4 {
+  animation:fade;
+  animation-duration:1s;
+  animation-delay:1.5s;
+  animation-fill-mode:forwards;
+}
+
+.landingTitle5 {
+  animation:fade;
+  animation-duration:1s;
+  animation-delay:2s;
+  animation-fill-mode:forwards;
+}
+
+.landingTitle6 {
+  animation:fade;
+  animation-duration:1s;
+  animation-delay:2.5s;
+  animation-fill-mode:forwards;
+}
+
+.split {
+    height: 70%;
+    width: 100%;
+    position: fixed;
+    z-index: 0;
+    top: 70%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.top {
+    top: 0;
+    background-image: linear-gradient(to right, #155799, #159957);
+}
+
+.bottom {
+    bottom: 0;
+    background-color: white;
+}
+
+
