@@ -35,3 +35,13 @@ function showContent(){
         x.style.display = "none";
     }
 }
+
+ // Dynamically set the code with `setCode` function
+function setter(id, x){
+  var button = document.getElementById(id);
+  if(button){
+    button.addEventListener("click",function(e){setCode(x);
+      },false);
+  }
+}
+
