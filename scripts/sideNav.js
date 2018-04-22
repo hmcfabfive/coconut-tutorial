@@ -15,9 +15,21 @@ document.write('\
   <div class="bar3"></div>\
 </div>\
 <div id="mySidenav" class="sidenav">\
-  <a href="../index.html">Home</a>\
+  <a href="../index.html"><strong>Home</strong></a>\
+  <a href="../menu.html"><strong>Menu</strong></a>\
+  <hr>\
   <a href="../Pipelines/pipe-operators.html">Pipelines</a>\
-  <a href="#">Case Match Else</a>\
+  <a href="../Patternmatch/Patternmatch_p1.html">Pattern Matching</a>\
+    <div class = "subsection">\
+    <a href="../Patternmatch/Patternmatch_p2.html">Learning Pattern Matching</a>\
+    <a href="../Patternmatch/Patternmatch_p3.html">Pattern Matching Example</a>\
+  </div>\
+  <a href="../Addpattern/Addpattern_p1.html">Add Pattern Recursion</a>\
+  <a href="../DataTypes/datatypes_p1.html">Data Types</a>\
+  <div class = "subsection">\
+    <a href="../DataTypes/datatypes_p2.html">Syntax</a>\
+    <a href="../DataTypes/datatypes_p3.html">Binary Trees</a>\
+  </div>\
   <a href="../Iterators/iterator_title.html">Iterators</a>\
   <div class = "subsection">\
     <a href="../Iterators/iterator_p1_interpreter.html">First exposure</a>\
@@ -30,22 +42,14 @@ document.write('\
     <a href="../LazyList/lazylist_p2.html">In Python</a>\
     <a href="../LazyList/lazylist_p3.html">In Coconut</a>\
   </div>\
-    <a href="../DataTypes/datatypes_p1.html">Data Types</a>\
+  <a href="../recursive-factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
   <div class = "subsection">\
-    <a href="../DataTypes/datatypes_p1.html">Syntax</a>\
-    <a href="../DataTypes/datatypes_p1.html">Binary Trees</a>\
+    <a href="../recursive-factorial/recursive-factorial_p2.html">Base Case</a>\
+    <a href="../recursive-factorial/recursive-factorial_p3.html">Recursive Call</a>\
+    <a href="../recursive-factorial/recursive-factorial_p4.html">Error Handling</a>\
+    <a href="../recursive-factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
+    <a href="../recursive-factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
   </div>\
-  <a href="../Recursive-Factorial/recursive-factorial_p1.html">Recursive Factorial</a>\
-  <div class = "subsection">\
-    <a href="../Recursive-Factorial/recursive-factorial_p2.html">Base Case</a>\
-    <a href="../Recursive-Factorial/recursive-factorial_p3.html">Recursive Call</a>\
-    <a href="../Recursive-Factorial/recursive-factorial_p4.html">Error Handling</a>\
-    <a href="../Recursive-Factorial/recursive-factorial_p5.html">Wildcard Pattern</a>\
-    <a href="../Recursive-Factorial/recursive-factorial_p6.html">Automatic Tail Call Optimization</a>\
-  </div>\
-  <a href="#"><code>addpattern</code> Factorial</a>\
-  <a href="#">Fibonacci</a>\
-  <a href="#">Binary Tree</a>\
 </div>\
 \
 ');
