@@ -241,6 +241,20 @@ div.grid-container: a{
       margin-top: 1rem;
       margin-left: 0; } }
 
+/* set code button class*/
+
+.stcode:hover {
+  text-decoration: none;
+  cursor:pointer; }
+
+.stcode-center:hover {
+text-decoration: none;
+cursor:pointer; }
+
+.show{
+  display:block;
+}
+/* end of set code class */ 
 
 /* Link Formatting */
 a:hover, a:focus {
