@@ -35,7 +35,7 @@
   <span class="mi">0.5</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
   <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
   <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
-  </code></pre></div>
+</code></pre></div>
 
             <p> Using Addpattern, we can tell Coconut to basically do the recursion for us. Here's the syntax for that: </p>
 
@@ -45,6 +45,7 @@
 <span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=</span>
     <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
     <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="nb">reduce</span><span class="o">$</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+
 
 <span class="c1"># Test cases:</span>
 <span class="o">-</span><span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># MatchError</span>
@@ -58,10 +59,12 @@
           </h2>
         <br>
         <section class="next">
-        <a href='../Addpattern/Addpattern_p1.html' class="btn">Next</a>
+
+        <a href='../DataTypes/datatypes_p1.html' class="btn">Next</a>
         </section>
         <section class="previous">
-        <a href='../Recursive-Factorial/recursive-factorial_p6.html' class="btn">Previous</a>
+        <a href='../Patternmatch/Patternmatch_p3.html' class="btn">Previous</a>
+
         </section>
         <br>
     <script>

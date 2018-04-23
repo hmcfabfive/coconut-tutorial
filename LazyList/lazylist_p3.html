@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="../styles/interpreter.css">
       <link rel="stylesheet" type="text/css" href="../styles/pygments.css">
       <script src="../scripts/interpreter.js"></script>
+      <script src="../scripts/codesnippets.js" type="text/javascript"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -20,18 +21,29 @@
     <div class="split left">
       <h1>In Coconut</h1>
       <h2>
-        <p>Since Coconut attempts to bring more elegant functional programming to Python, we can contrast a Coconut implementation of infinite lists to the Python implementations of infinite lists. Here’s the code for defining an infinite list representing the Fibonacci series in Coconut:
+        <p>Here’s the code for defining an infinite list representing the Fibonacci series in Coconut:
           <br>
       </ul>
-        <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fib</span><span class="p">()</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:</span> <span class="p">:</span> <span class="nb">map</span> <span class="p">((</span><span class="o">+</span><span class="p">),</span> <span class="n">fib</span><span class="p">(),</span> <span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+        <div class="highlight"><pre><code><span class="k">def</span> <span class="nf">fib</span><span class="p">()</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="p">:: </span><span class="nb">map</span> <span class="p">((</span><span class="o">+</span><span class="p">),</span> <span class="n">fib</span><span class="p">(),</span> <span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </code></pre></div>
       Note the use of the iterator chaining operator :: in this case to form the list.
       <br><br>
-      Let’s break down this code, step-by-step to understand what exactly is going here. First, we defined our first two Fibonacci numbers to be (0,1) and we used the :: operator to concatenate the rest of the Fibonacci sequence. We use a higher order function map, by applying the (+) arithmetic operator in fib() and the rest of the elements fib()$[1:]
+      Let’s break down this code, step-by-step to understand what exactly is going here. First, we defined our first two Fibonacci numbers to be <code>(0,1)</code> and we used the <code>::</code> operator to concatenate the rest of the Fibonacci sequence. We use a higher order function map, by applying the <code>(+)</code> arithmetic operator in <code>fib()</code> and the rest of the elements <code>fib()$[1:]</code>
       <br><br>
-      Now that we have our infinite list of Fibonacci numbers, obtaining the nth element is as simple as calling fib()$[n]. Try finding the 10th Fibonacci number!
+      Obtaining the <code>nth</code> element is straightforward. Try finding the 20th element.
       <br><br>
-      While it is possible to generate an infinite list of Fibonacci numbers in Python, Coconut is able to combine lazy lists and a higher order function to generate the Fibonacci numbers. It makes Python code look more simple and easy to read.
+
+      <div class="btn" onclick="showContent();">
+            Show Solution:
+      </div>
+      <div id="solutionText" style="display:none">
+        <div class="stcode" <input id="lazy1" type="button" value="clickme" onclick="setter(this.id,laz1);"/><div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">fib</span><span class="p">()</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="o">::</span> <span class="nb">map</span> <span class="p">((</span><span class="o">+</span><span class="p">),</span> <span class="n">fib</span><span class="p">(),</span> <span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+<span class="n">fib</span><span class="p">()</span><span class="o">$</span><span class="p">[</span><span class="mi">20</span><span class="p">]</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+</code></pre></div></div>
+      </div>
+      <br>
+      In the next section, we'll take a look at implementing a factorial function.
     </p></h2>
 
     <section class="previous"">

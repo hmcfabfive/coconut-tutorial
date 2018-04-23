@@ -3,12 +3,9 @@
   <head>
     <title>Pattern Matching - Introduction | Coconut Tutorial</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <meta name="theme-color" content="#000000">
-    <link rel="stylesheet" href="../styles/main.8e1c53f0.css">
-    <link rel="stylesheet" href="../styles/interpreter.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/pygments.css">
-    <script src="../scripts/interpreter.js"></script>
+    <script src="../scripts/main.js"></script>
   </head>
   <body>
 
@@ -24,7 +21,9 @@
       </h1>
       <h2>
         <p>Say you're working in a recycling facility and want to write a program that will sort the aluminum, paper, and plastic recyclables. This would be easy enough to write using if statements:</p>
-        <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sortItems</span><span class="p">(</span><span class="n">recyclable</span><span class="p">):</span>
+
+        <div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sortItems</span><span class="p">(</span><span class="n">recyclable</span><span class="p">):</span> <span class="o">&lt;</span><span class="n">br</span><span class="o">&gt;</span>
+
     <span class="sd">&quot;&quot;&quot;sort the items based on material&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">recyclable</span> <span class="ow">is</span> <span class="n">aluminum</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;execute code to put recyclable into the aluminum bin&quot;&quot;&quot;</span>
@@ -35,6 +34,7 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;item not recyclable&quot;</span><span class="p">)</span>
 </pre></div>
+
 <p> ...But there's an easier and cleaner way to do it. </p>
       </h2>
       <br>
@@ -43,7 +43,7 @@
         </section>
 
         <section class="previous">
-        <a href='../menu.html' class="btn">Previous</a>
+        <a href='../Pipelines/pipe-operators.html' class="btn">Previous</a>
         </section>
       <br>
       <script>
