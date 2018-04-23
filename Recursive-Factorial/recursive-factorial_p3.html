@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../styles/interpreter.css">
     <link rel="stylesheet" href="../styles/pygments.css">
     <script src="../scripts/interpreter.js"></script>
+    <script src="../scripts/codesnippets.js" type="text/javascript"></script>
   </head>
   <body><noscript>You need to enable JavaScript to run this app.</noscript>
 
@@ -21,7 +22,7 @@
         <h1>Recursive Call</h1>
           <h2>
             <p>Here's where we left off:</p>
-  <div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <div class="stcode" <input id="rec2" type="button" value="clickme" onclick="setter(this.id,rec2);"/><div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
       <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
       <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
           <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
@@ -30,7 +31,7 @@
   <span class="c1"># Test cases:</span>
   <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
   <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
-</code></pre></div>
+</code></pre></div></div>
 
 
             <p>Copy and paste the starter code into the interpreter, implement
