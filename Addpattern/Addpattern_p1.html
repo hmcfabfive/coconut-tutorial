@@ -20,7 +20,7 @@
     <div class="split left">
         <h1>"Honey, I shrunk the function!"</h1>
           <h2>
-            <p>Recursion is fun, and it makes code really clean and succinct. But what if we could make it even cleaner? We can, thanks to Coconut's Addpattern functionality.</p>
+            <p>Recursion is fun, and it makes code really clean and succinct. But what if we could make it even cleaner? We can, thanks to Coconut's <strong>Addpattern</strong> functionality.</p>
             <p>Here's where we left off:</p>
   <div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
       <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
@@ -46,6 +46,7 @@
     <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
     <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="nb">reduce</span><span class="o">$</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
 
+
 <span class="c1"># Test cases:</span>
 <span class="o">-</span><span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># MatchError</span>
 <span class="mi">0.5</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># MatchError</span>
@@ -53,14 +54,17 @@
 <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
 </pre></div>
 
+
             <p>Run the code to make sure the test cases pass!</p>
           </h2>
         <br>
         <section class="next">
+
         <a href='../DataTypes/datatypes_p1.html' class="btn">Next</a>
         </section>
         <section class="previous">
         <a href='../Patternmatch/Patternmatch_p3.html' class="btn">Previous</a>
+
         </section>
         <br>
     <script>
