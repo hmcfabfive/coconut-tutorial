@@ -20,19 +20,33 @@
   <div id="main-content">
     <div class="split left">
         <h1>Base Case</h1>
-          <h2>
-            <p>Copy and paste this starter code into the interpreter:</p>
-  <div class="stcode" <input id="rec1" type="button" value="clickme" onclick="setter(this.id,rec1);"/><div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+        <h2>
+          <p>Double-click this starter code to paste it into the interpreter:</p>
+<div class="stcode" <input id="rec1" type="button" value="clickme" onclick="setter(this.id,rec1);"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
 
-  <span class="c1">#Test cases:</span>
-  <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
-</code></pre></div></div>
+<span class="c1">#Test cases:</span>
+<span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
+</pre></div></div>
 
-            <p>Let’s start the function by taking care of the base case, when n == 0.</p>
-            <p>Start a case block and make the first match statement match 0 which will check if n matches to 0. According to the definition of factorial, 0! = 1. Therefore, the program should return 1 if n matches to 0.</p>
-            <p>Run the code to make sure the test cases pass!</p>
-          </h2>
+          <p>Let’s start the function by taking care of the base case, when n == 0.</p>
+          <p>Start a case block and make the first match statement match 0 which will check if n matches to 0. According to the definition of factorial, 0! = 1. Therefore, the program should return 1 if n matches to 0.</p>
+          <p>Run the code to make sure the test cases pass!</p>
+
+          <!-- Show solution button -->
+          <div class="btn" onclick="showContent();">
+          Show Solution:
+          </div>
+
+          <div id="solutionText" style="display:none">
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span></div>
+          </div>
+        </h2>
         <br>
         <section class="next">
         <a href='recursive-factorial_p3.html' class="btn">Next</a>
@@ -48,7 +62,7 @@
       };
     </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-    
+
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->
