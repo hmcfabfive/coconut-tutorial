@@ -1,6 +1,6 @@
 /** start of iterator code snippets */
 var ite1 = "cookiebox = iter([\"chocolate chip\", \"oatmeal raisin\", \"sugar\"])"
-var ite2 = "cookie.next()"
+var ite2 = ite1 + "\n\n" + "next(cookiebox) |> print"
 var ite3 = "x = iter([1, 2, 3])"
 var ite4 = ite3 + "\n\n" + "x |> list |> print"
 
