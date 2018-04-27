@@ -71,9 +71,29 @@ This branch is devoted to the content of the tutorial. It contains Markdown file
 
 This branch contains Markdown files with drafts of the written tutorial content. The tutorials in this branch are incomplete or in need of peer-review. Once these steps have been taken, the content is moved to the tutorials branch.
 
+## Architecture
+
+### Prerequisites
+
+TODO: List what a user needs to have installed before running the installation instructions below (e.g., git, which versions of Ruby/Rails)
+
+### Gems
+
+TODO: List which gems you added to the project, and the purpose each gem serves in your app.
+
+## Installation
+
+TODO: Describe the installation process (making sure you mention `bundle install`).
+Instructions need to be such that a user can just copy/paste the commands to get things set up and running. 
+
 ## Issues
 
 See [Issues](https://github.com/hmcfabfive/coconut-tutorial/issues) for more information.
+
+## Known Problems
+
+TODO: Describe any known issues, bugs, odd behaviors or code smells. 
+Provide steps to reproduce the problem / name a file or a function where the problem lives.
 
 ## References and Acknowledgements
 
@@ -86,3 +106,11 @@ For more Coconut resources, see the following:<br/>
 [Coconut Github](https://github.com/evhub/coconut)<br/>
 [Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)<br/>
 [Coconut Gitter](https://gitter.im/evhub/coconut)<br/>
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
