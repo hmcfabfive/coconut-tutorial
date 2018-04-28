@@ -14,21 +14,21 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Architecture
 
-### Prerequisites
+## Prerequisites
 
 * Git
-* [Node](https://nodejs.org/en/)
+* [Node](https://nodejs.org/en/)  
 * [live-server](https://github.com/tapio/live-server)
 
 ## Installation
 
-Clone the repository in the command line:
-`git clone https://github.com/hmcfabfive/coconut-tutorial.git`
+Clone the repository in the command line:  
+`git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
 `cd coconut-tutorial`
 
 ## Running Locally
 
-Inside the coconut-tutorial directory, run `live-server`, which should automatically open the website in your web browser.
+In the command line, run `live-server`, which should automatically open the website in your web browser.
 
 ## Functionality
 
@@ -64,7 +64,7 @@ The Coconut interpreter created by CS121 Team Panda is embedded into many of the
 
 #### Copying Code into the Interpreter
 
-The tutorial can copy code into the interpreter for the user. The user just needs to click on a code snippet and it will be copied into the interpreter.
+The tutorial contains automatic code loading functionality. Simply double-click on a code snippet, and it will be copied into the interpreter.
 
 #### Gitter
 Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom that gives Coconut users a way to talk to Evan Hubinger, Coconut's creator, directly. The chatroom can be accessed by clicking the tab at the bottom right of the page.
@@ -101,13 +101,13 @@ See [Issues](https://github.com/hmcfabfive/coconut-tutorial/issues) for more inf
 
 The embedded Coconut Interpreter is one of the most significant contributions to this project. It was created by CS 121 Team Panda. The links to the interpreter's project pages can be found below.
 
-[CS121 Team Panda Github](https://github.com/cs121-team-panda)
+[CS121 Team Panda Github](https://github.com/cs121-team-panda)  
 [Live Interpreter](https://github.com/cs121-team-panda/coconut-interpreter)
 
-For more Coconut resources, see the following:<br/>
-[Coconut Github](https://github.com/evhub/coconut)<br/>
-[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)<br/>
-[Coconut Gitter](https://gitter.im/evhub/coconut)<br/>
+For more Coconut resources, see the following:  
+[Coconut Github](https://github.com/evhub/coconut)  
+[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)  
+[Coconut Gitter](https://gitter.im/evhub/coconut)  
 
 ## Contributing
 
