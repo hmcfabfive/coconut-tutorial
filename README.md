@@ -17,13 +17,13 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 ### Prerequisites
 
 * Git
-* [Node](https://nodejs.org/en/)
+* [Node](https://nodejs.org/en/)  
 * [live-server](https://github.com/tapio/live-server)
 
 ## Installation
 
 Clone the repository in the command line:
-`git clone https://github.com/hmcfabfive/coconut-tutorial.git`
+`git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
 `cd coconut-tutorial`
 
 ## Running Locally
@@ -104,10 +104,10 @@ The embedded Coconut Interpreter is one of the most significant contributions to
 [CS121 Team Panda Github](https://github.com/cs121-team-panda)
 [Live Interpreter](https://github.com/cs121-team-panda/coconut-interpreter)
 
-For more Coconut resources, see the following:<br/>
-[Coconut Github](https://github.com/evhub/coconut)<br/>
-[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)<br/>
-[Coconut Gitter](https://gitter.im/evhub/coconut)<br/>
+For more Coconut resources, see the following:  
+[Coconut Github](https://github.com/evhub/coconut)  
+[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)  
+[Coconut Gitter](https://gitter.im/evhub/coconut)  
 
 ## Contributing
 
