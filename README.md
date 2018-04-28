@@ -14,7 +14,7 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Architecture
 
-### Prerequisites
+## Prerequisites
 
 * Git
 * [Node](https://nodejs.org/en/)  
@@ -22,7 +22,7 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Installation
 
-Clone the repository in the command line:
+Clone the repository in the command line:  
 `git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
 `cd coconut-tutorial`
 
