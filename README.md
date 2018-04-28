@@ -28,7 +28,7 @@ Clone the repository in the command line:
 
 ## Running Locally
 
-Inside the coconut-tutorial directory, run `live-server`, which should automatically open the website in your web browser.
+In the command line, run `live-server`, which should automatically open the website in your web browser.
 
 ## Functionality
 
@@ -64,7 +64,7 @@ The Coconut interpreter created by CS121 Team Panda is embedded into many of the
 
 #### Copying Code into the Interpreter
 
-The tutorial can copy code into the interpreter for the user. The user just needs to click on a code snippet and it will be copied into the interpreter.
+The tutorial contains automatic code loading functionality. Simply double-click on a code snippet, and it will be copied into the interpreter.
 
 #### Gitter
 Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom that gives Coconut users a way to talk to Evan Hubinger, Coconut's creator, directly. The chatroom can be accessed by clicking the tab at the bottom right of the page.
