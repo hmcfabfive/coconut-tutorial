@@ -12,6 +12,24 @@ The official Coconut tutorial can be found [here](http://coconut.readthedocs.io/
 
 The most recent version of the new Coconut tutorial can be found [here](https://hmcfabfive.github.io/coconut-tutorial/).
 
+## Architecture
+
+### Prerequisites
+
+* Git
+* [Node](https://nodejs.org/en/)
+* [live-server](https://github.com/tapio/live-server)
+
+## Installation
+
+Clone the repository in the command line:
+`git clone https://github.com/hmcfabfive/coconut-tutorial.git`
+`cd coconut-tutorial`
+
+## Running Locally
+
+Inside the coconut-tutorial directory, run `live-server`, which should automatically open the website in your web browser.
+
 ## Functionality
 
 #### Rewritten tutorial steps
@@ -57,7 +75,7 @@ Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom tha
 
 #### master
 
-The master branch contains the most recently updated files pertaining to the tutorial's web interface. These are the html files for the tutorial pages, the css styling files for the website and for functional elements of the tutorial, and the javascript files that help run additional functionality in the tutorial website.
+The master branch contains the most recently updated files pertaining to the tutorial's web interface. These are the HTML files for the tutorial pages, the CSS styling files for the website and for functional elements of the tutorial, and the Javascript files that help run additional functionality in the tutorial website.
 
 #### gh-pages
 
@@ -71,36 +89,20 @@ This branch is devoted to the content of the tutorial. It contains Markdown file
 
 This branch contains Markdown files with drafts of the written tutorial content. The tutorials in this branch are incomplete or in need of peer-review. Once these steps have been taken, the content is moved to the tutorials branch.
 
-## Architecture
-
-### Prerequisites
-
-TODO: List what a user needs to have installed before running the installation instructions below (e.g., git, which versions of Ruby/Rails)
-
-### Gems
-
-TODO: List which gems you added to the project, and the purpose each gem serves in your app.
-
-## Installation
-
-TODO: Describe the installation process (making sure you mention `bundle install`).
-Instructions need to be such that a user can just copy/paste the commands to get things set up and running. 
-
 ## Issues
 
 See [Issues](https://github.com/hmcfabfive/coconut-tutorial/issues) for more information.
 
 ## Known Problems
 
-TODO: Describe any known issues, bugs, odd behaviors or code smells. 
-Provide steps to reproduce the problem / name a file or a function where the problem lives.
+* Code snippets require double click to load instead of a single click
 
 ## References and Acknowledgements
 
 The embedded Coconut Interpreter is one of the most significant contributions to this project. It was created by CS 121 Team Panda. The links to the interpreter's project pages can be found below.
 
-CS121 Team Panda Github
-Live Interpreter
+[CS121 Team Panda Github](https://github.com/cs121-team-panda)
+[Live Interpreter](https://github.com/cs121-team-panda/coconut-interpreter)
 
 For more Coconut resources, see the following:<br/>
 [Coconut Github](https://github.com/evhub/coconut)<br/>
