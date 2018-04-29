@@ -14,9 +14,11 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Architecture
 
+The Coconut tutorial uses simple HTML pages for the written tutorial, formatted through CSS and Javascript. Individual HTML pages were chosen over a styling tool such Sphinx for the ability to fine-tune pages inherent in custom HTML. The embedded interpreter and Gitter chatroom are implemented through Javascript:
+
 ![Architecture](https://www.dl.dropboxusercontent.com/s/mt1x8toe6gwyjzk/Screen%20Shot%202018-04-19%20at%207.21.43%20AM.png?dl=0)
 
-The Coconut tutorial is made up of static HTML pages styled using CSS. Interactive content, including the interpreter and Gitter chatroom, are integrated using JavaScript. The original model for the tutorial website involved a database of tutorial pages, styled using a Sphinx theme. In theory, this would have allowed for more modularity; the tutorial could be expanded with relative ease. However, using a database introduced a great deal of unnecessary complexity in development, and would have added unneeded back-end to the website that would have slowed the tutorial down. Furthermore, it was determined that it would be very difficult if not impossible to implement interactive content in Sphinx-styled pages. Using HTML and CSS files instead of a database and Sphinx styling allowed us to build and style each page as desired, and to add much more functionality to the website. From this it is clear that our current architecture not only benefits us as developers attempting to add interactivity to the tutorial website, but also benefits the users of the Coconut tutorial.
+
 
 ## Prerequisites
 
