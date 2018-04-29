@@ -103,7 +103,7 @@ See [Issues](https://github.com/hmcfabfive/coconut-tutorial/issues) for more inf
 
 ## References and Acknowledgements
 
-The embedded Coconut Interpreter is one of the most significant contributions to this project. It was created by CS 121 Team Panda. The links to the interpreter's project pages can be found [here](https://github.com/cs121-team-panda).
+The embedded Coconut Interpreter is one of the most significant contributions to this project. It was created by CS 121 Team Panda. The link to the interpreter's project pages can be found [here](https://github.com/cs121-team-panda).
 
 For more Coconut resources, see the following:  
 [Coconut Github](https://github.com/evhub/coconut)  
