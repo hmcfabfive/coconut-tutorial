@@ -33,7 +33,7 @@ var rec5 = "def factorial(n):\n    \"\"\"Compute n! where n is an integer >= 0.\
 /** pattern matching code snippets*/
 
 var pat1 = "items = iter([\"aluminum\", \"plastic\", \"plastic\", \"plastic\", \"plastic\", \"paper\", \"plastic\", \"aluminum\", \"aluminum\", \"paper\", \"plastic\"])"
-var pat2 = 
+var pat2 = "items = \"iter([\"aluminum\", \"plastic\", \"plastic\", \"plastic\", \"plastic\", \"paper\", \"plastic\", \"aluminum\", \"aluminum\", \"paper\", \"plastic\"])\ndef countItems(recyclable, aluminums, papers, plastics):\n    \"\"\"count the items based on material\"\"\"\n    case (recyclable):\n        match \"aluminum\":\n            current = aluminums[0]\n            aluminums[0] = current+1\n        match \"paper\":\n            current = papers[0]\n            papers[0] = current+1\n        match \"plastic\":\n            current = plastics[0]\n            plastics[0] = current+1\n    else:\n            raise TypeError(\"item not recyclable: \" + recyclable)\n\nnextItem = next(items,None)\n\nnumAluminum = [0]\nnumPaper = [0]\nnumPlastic = [0]\n\nwhile (nextItem != None) :\n  countItems(nextItem, numAluminum, numPaper, numPlastic)\n  nextItem = next(items,None)\n\n\"Number of aluminum items: \"+str(numAluminum[0]) |> print\n\"Number of paper items: \"+str(numPaper[0]) |> print\n\"Number of plastic items: \"+str(numPlastic[0]) |> print"
 
 /** addpattern code snippets*/
 var add1 = 
