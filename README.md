@@ -14,6 +14,10 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Architecture
 
+![Architecture](https://www.dl.dropboxusercontent.com/s/mt1x8toe6gwyjzk/Screen%20Shot%202018-04-19%20at%207.21.43%20AM.png?dl=0)
+
+The Coconut tutorial is made up of static HTML pages styled using CSS. Interactive content, including the interpreter and Gitter chatroom, are inte- grated using JavaScript. The original model for the tutorial website involved a database of tutorial pages, styled using a Sphinx theme. In theory, this would have allowed for more modularity; the tutorial could be expanded with relative ease. However, using a database introduced a great deal of unnecessary complexity in development, and would have added unneeded back-end to the website that would have slowed the tutorial down. Further- more, it was determined that it would be very difficult if not impossible to implement interactive content in Sphinx-styled pages. Using HTML and CSS files instead of a database and Sphinx styling allowed us to build and style each page as desired, and to add much more functionality to the web- site. From this it is clear that our current architecture not only benefits us as developers attempting to add interactivity to the tutorial website, but also benefits the users of the Coconut tutorial.
+
 ## Prerequisites
 
 * Git
@@ -22,13 +26,13 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Installation
 
-Clone the repository in the command line:  
-`git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
-`cd coconut-tutorial`
+Once you've installed the above prerequisites, type the following commands in the command line:  
+1. `git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
+2. `cd coconut-tutorial`
+3. `live-server`
 
-## Running Locally
 
-In the command line, run `live-server`, which should automatically open the website in your web browser.
+The command `live-server` should automatically open the website in your web browser.
 
 ## Functionality
 
