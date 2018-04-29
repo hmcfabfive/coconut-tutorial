@@ -12,6 +12,24 @@ The official Coconut tutorial can be found [here](http://coconut.readthedocs.io/
 
 The most recent version of the new Coconut tutorial can be found [here](https://hmcfabfive.github.io/coconut-tutorial/).
 
+## Architecture
+
+## Prerequisites
+
+* Git
+* [Node](https://nodejs.org/en/)  
+* [live-server](https://github.com/tapio/live-server)
+
+## Installation
+
+Clone the repository in the command line:  
+`git clone https://github.com/hmcfabfive/coconut-tutorial.git`  
+`cd coconut-tutorial`
+
+## Running Locally
+
+In the command line, run `live-server`, which should automatically open the website in your web browser.
+
 ## Functionality
 
 #### Rewritten tutorial steps
@@ -46,7 +64,7 @@ The Coconut interpreter created by CS121 Team Panda is embedded into many of the
 
 #### Copying Code into the Interpreter
 
-The tutorial can copy code into the interpreter for the user. The user just needs to click on a code snippet and it will be copied into the interpreter.
+The tutorial contains automatic code loading functionality. Simply double-click on a code snippet, and it will be copied into the interpreter.
 
 #### Gitter
 Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom that gives Coconut users a way to talk to Evan Hubinger, Coconut's creator, directly. The chatroom can be accessed by clicking the tab at the bottom right of the page.
@@ -57,7 +75,7 @@ Gitter is a chatroom service for Github users. Coconut has a Gitter chatroom tha
 
 #### master
 
-The master branch contains the most recently updated files pertaining to the tutorial's web interface. These are the html files for the tutorial pages, the css styling files for the website and for functional elements of the tutorial, and the javascript files that help run additional functionality in the tutorial website.
+The master branch contains the most recently updated files pertaining to the tutorial's web interface. These are the HTML files for the tutorial pages, the CSS styling files for the website and for functional elements of the tutorial, and the Javascript files that help run additional functionality in the tutorial website.
 
 #### gh-pages
 
@@ -75,14 +93,26 @@ This branch contains Markdown files with drafts of the written tutorial content.
 
 See [Issues](https://github.com/hmcfabfive/coconut-tutorial/issues) for more information.
 
+## Known Problems
+
+* Code snippets require double click to load instead of a single click
+
 ## References and Acknowledgements
 
 The embedded Coconut Interpreter is one of the most significant contributions to this project. It was created by CS 121 Team Panda. The links to the interpreter's project pages can be found below.
 
-CS121 Team Panda Github
-Live Interpreter
+[CS121 Team Panda Github](https://github.com/cs121-team-panda)  
+[Live Interpreter](https://github.com/cs121-team-panda/coconut-interpreter)
 
-For more Coconut resources, see the following:<br/>
-[Coconut Github](https://github.com/evhub/coconut)<br/>
-[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)<br/>
-[Coconut Gitter](https://gitter.im/evhub/coconut)<br/>
+For more Coconut resources, see the following:  
+[Coconut Github](https://github.com/evhub/coconut)  
+[Coconut Documentation](http://coconut.readthedocs.io/en/master/DOCS.html)  
+[Coconut Gitter](https://gitter.im/evhub/coconut)  
+
+## Contributing
+
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D

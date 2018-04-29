@@ -20,25 +20,57 @@
   <div id="main-content">
     <div class="split left">
         <h1>Recursive Call</h1>
-          <h2>
-            <p>Here's where we left off:</p>
-  <div class="stcode" <input id="rec2" type="button" value="clickme" onclick="setter(this.id,rec2);"/><div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-      <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
-      <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
-          <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">return</span> <span class="mi">1</span>
+        <h2>
+          <p>Next, we’ll add the recursive call. Here's where we left off:</p>
+<div class="stcode" <input id="rec2" type="button" value="clickme" onclick="setter(this.id,rec2);"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
 
-  <span class="c1"># Test cases:</span>
-  <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
-  <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
-</code></pre></div></div>
+<span class="c1"># Test cases:</span>
+<span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
+<span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
+</pre></div></div>
 
+          <p>
+            We want our next match statement to check if n is an integer and
+            greater than 0.
+          </p>
+          <p>
+            Add a match statement that checks whether n matches to x is int.
+            This'll check if n is an integer.
+          </p>
+          <p>
+            The second attribute of n we want to check for is if it’s greater
+            than 0. To do this, add the conditional if x > 0 right after the
+            x is int pattern.
+          </p>
+          <p>
+            If n matches this pattern, we want to return n times the
+            recursive call to factorial.
+          </p>
+          <p>
+            Double-click starter code, implement the recursive call, and then
+            run the code to make sure the test cases pass!
+          </p>
 
-            <p>Copy and paste the starter code into the interpreter, implement
-              the recursive call, and then run the code to make sure the test
-              cases pass!
-            </p>
-          </h2>
+          <!-- Show solution button -->
+          <div class="btn" onclick="showContent();">
+          Show Solution:
+          </div>
+
+          <div id="solutionText" style="display:none">
+
+            <div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+                <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+                <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+                    <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="mi">1</span>
+                    <span class="k">match</span> <span class="n">x</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span></code></pre></div>
+          </div>
+        </h2>
         <br>
         <section class="next">
         <a href='recursive-factorial_p4.html' class="btn">Next</a>
@@ -54,7 +86,7 @@
       };
     </script>
     <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-    
+
     </div>
     <div class="split right" id="root"></div>
     <!-- Script for the interpreter -->
