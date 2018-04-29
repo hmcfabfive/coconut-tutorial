@@ -41,3 +41,10 @@ var add2 = "def factorial(0) = 1\n@addpattern(factorial)\ndef factorial(n is int
 
 /** start of the lazy list code snippets */
 var laz1 = "def fib() = (0, 1) :: map ((+), fib(), fib()$[1:])\n\nfib()$[20] |> print"
+
+/** pipelines */
+var pip1 = "(|>)    => pipe forward\n(|*>)   => multiple-argument pipe forward\n(<|)    => pipe backward\n(<*|)   => multiple-argument pipe backward"
+var pip2 = "obj |> .attribute |> .method(args) |> func$(args) |> .[index]"
+var pip3 = "func(args, obj.attribute.method(args))[index]"
+var pip4 = "print(sum(list(filter(lambda x: x % 2 == 0, range(10)))))"
+var pip5 = "((x) -> x % 2 == 0, range(10)) |*> filter |> list |> sum |> print"
