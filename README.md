@@ -14,21 +14,15 @@ The most recent version of the new Coconut tutorial can be found [here](https://
 
 ## Architecture
 
-Node, a server environment allowing the website to run the interpreter
-live-server, an http server to host the website in a local website that automatically updates based on changes made to the code
-
-
 The Coconut tutorial uses simple HTML pages for the written tutorial, formatted through CSS and Javascript. Individual HTML pages were chosen over a styling tool such Sphinx for the ability to fine-tune pages inherent in custom HTML. The embedded interpreter and Gitter chatroom are implemented through Javascript:
 
 ![Architecture](https://www.dl.dropboxusercontent.com/s/mt1x8toe6gwyjzk/Screen%20Shot%202018-04-19%20at%207.21.43%20AM.png?dl=0)
 
-
-
 ## Prerequisites
 
 * Git
-* [Node](https://nodejs.org/en/)  
-* [live-server](https://github.com/tapio/live-server)
+* [Node](https://nodejs.org/en/), a server environment allowing the website to run the interpreter
+* [live-server](https://github.com/tapio/live-server), an http server to host the website in a local website that automatically updates based on changes made to the code
 
 ## Installation
 
