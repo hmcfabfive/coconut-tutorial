@@ -29,34 +29,34 @@
           <p> Let's start by creating a basic data type to represent a binary tree. <br>
 
             Recall that a binary tree has two main components: nodes and leaves, where each node leads to either 0, 1, or 2 other nodes, and nodes that lead to no other nodes (i.e. has no children) are called leaves. <br>
+            <center>
+            <img src="binaryTree.png" alt="Binary Tree"> </center>
 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/192px-Binary_tree.svg.png" alt="Binary Tree"> <br>
+            Enter the following three lines into the Coconut interpreter: <br><br>
 
-            Enter the following two lines into the Coconut interpreter: <br>
-
-              <div class="stcode" <input id="dat1" type="button" value="clickme" onclick="setter(this.id,dat1);"/><div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+              <div class="stcode" <input id="dat1" type="button" value="clickme" onclick="setter(this.id,dat1);"/><div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">()</span>
+<span class="kd">data</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>              	
 <span class="kd">data</span> <span class="nv">Node</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span>
 </code></pre></div></div>
 
 
           This allows us to declare data types such that:
           <ul>
+            <li> <code>Empty()</code> represents an empty binary tree 
             <li> <code>Leaf(n)</code> represents a leaf with the value <code>n</code></li>
-            <li> <code>Node(l, r)</code> represents a node with children <code>l</code> and <code>r</code></li>
+            <li> <code>Node(l,r)</code> represents a node with children <code>l</code> and <code>r</code></li>
           </ul>
 
-          Now suppose that we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree as follows:<br><br>
+          Now suppose that we want to add a method such as finding the "size" of a certain data type. We can declare an empty tree's size as follows:<br><br>
 
 
-            <div class="stcode" <input id="dat2" type="button" value="clickme" onclick="setter(this.id,dat2);"/><div class="highlight"><pre><code><span class="kd">data</span> <span class="nv">Empty</span><span class="p">(</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="ni">self</span><span class="p">):</span>
-      <span class="l">return</span> <span class="n">0</span>
+            <div class="stcode" <input id="dat2" type="button" value="clickme" onclick="setter(this.id,dat2);"/><div class="highlight"><pre><code><span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Empty</span><span class="p">())</span> <span class="o">=</span> <span class="n">0</span>
 </code></pre></div></div>
 
 
           Alternatively, methods can be applied to existing data types as follows:<br><br>
 
-            <div class="stcode" <input id="dat3" type="button" value="clickme" onclick="setter(this.id,dat3);"/><div class="highlight"><pre><code>?<span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
+            <div class="stcode" <input id="dat3" type="button" value="clickme" onclick="setter(this.id,dat3);"/><div class="highlight"><pre><code><span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">size</span><span class="p">(</span><span class="nv">Leaf</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="o">=</span> <span class="n">1</span>
 
 <span class="o">@</span><span class="nb">addpattern</span><span class="p">(</span><span class="nf">size</span><span class="p">)</span>
@@ -65,7 +65,7 @@
 
           Finally, let's put all of these elements into action with the following binary tree. Copy and paste the following code to make a binary tree with an empty left child node, a leaf with value 10 on the right, and finally to find its size. <br><br>
 
-            <div class="stcode" <input id="dat4" type="button" value="clickme" onclick="setter(this.id,dat4);"/><div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span></code>
+            <div class="stcode" <input id="dat4" type="button" value="clickme" onclick="setter(this.id,dat4);"/><div class="highlight"><pre><code><span class="nf">size</span><span class="p">(</span><span class="nv">Node</span><span class="p">(</span><span class="nv">Empty</span><span class="p">(),</span> <span class="nv">Leaf</span><span class="p">(</span><span class="n">10</span><span class="p">)))</span> <span class="o">|&gt;</span> <span class="nb">print</span></code>
 </code></pre></div>
 
           You should find that because the node has only one leaf, the size of this entire tree becomes 1. 

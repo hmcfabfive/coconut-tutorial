@@ -24,11 +24,11 @@
         Coconut provides support for, and in many ways is centered around the use of the pipe operator and pipeline-style function application. The word pipelining is indicative of what these operators do: data processing elements and functions are connected in series with the output of one becoming the input of the next. This makes multiple function calls more readable and simpler to implement.
       </p>
       <p>The different operators are:</p>
-      <div class="highlight"><pre><code><span></span><span class="p">(</span><span class="o">|&gt;</span><span class="p">)</span>    <span class="o">=&gt;</span> <span class="n">pipe</span> <span class="n">forward</span>
+      <div class="stcode" <input id="pip1" type="button" value="clickme" onclick="setter(this.id,pip1);"/><div class="highlight"><pre><code><span></span><span class="p">(</span><span class="o">|&gt;</span><span class="p">)</span>    <span class="o">=&gt;</span> <span class="n">pipe</span> <span class="n">forward</span>
 <span class="p">(</span><span class="o">|*&gt;</span><span class="p">)</span>   <span class="o">=&gt;</span> <span class="n">multiple</span><span class="o">-</span><span class="n">argument</span> <span class="n">pipe</span> <span class="n">forward</span>
 <span class="p">(</span><span class="o">&lt;|</span><span class="p">)</span>    <span class="o">=&gt;</span> <span class="n">pipe</span> <span class="n">backward</span>
 <span class="p">(</span><span class="o">&lt;*|</span><span class="p">)</span>   <span class="o">=&gt;</span> <span class="n">multiple</span><span class="o">-</span><span class="n">argument</span> <span class="n">pipe</span> <span class="n">backward</span>
-</code></pre></div>
+</code></pre></div></div>
 
       <p>
         <em>Note: refer to the
@@ -37,16 +37,16 @@
       </p>
 
       <p>Let's look at a function call in Coconut that uses pipe forward:</p>
-      <div class="highlight"><pre><code><span></span><span class="n">obj</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">attribute</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">func</span><span class="o">$</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
-</code></pre></div>
+      <div class="stcode" <input id="pip2" type="button" value="clickme" onclick="setter(this.id,pip2);"/><div class="highlight"><pre><code><span></span><span class="n">obj</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">attribute</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="n">func</span><span class="o">$</span><span class="p">(</span><span class="n">args</span><span class="p">)</span> <span class="o">|&gt;</span> <span class="o">.</span><span class="p">[</span><span class="n">index</span><span class="p">]</span>
+</code></pre></div></div>
 
       <p>Compare that to equivalent Python code:</p>
-      <div class="highlight"><pre><code><span></span><span class="n">func</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">attribute</span><span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">))[</span><span class="n">index</span><span class="p">]</span>
-</code></pre></div>
+      <div class="stcode" <input id="pip3" type="button" value="clickme" onclick="setter(this.id,pip3);"/><div class="highlight"><pre><code><span></span><span class="n">func</span><span class="p">(</span><span class="n">args</span><span class="p">,</span> <span class="n">obj</span><span class="o">.</span><span class="n">attribute</span><span class="o">.</span><span class="n">method</span><span class="p">(</span><span class="n">args</span><span class="p">))[</span><span class="n">index</span><span class="p">]</span>
+</code></pre></div></div>
 
       <p>For a more concrete example, consider the following Python:</p>
-      <div class="highlight"><pre><code><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))))</span>
-</code></pre></div>
+      <div class="stcode" <input id="pip4" type="button" value="clickme" onclick="setter(this.id,pip4);"/><div class="highlight"><pre><code><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)))))</span>
+</code></pre></div></div>
       <p>
         With pipelines it's a lot easier and clearer to see what is happening and where the data is flowing.<br>
         This line of code filters out the even numbers on the interval 0 to 9, puts
@@ -54,8 +54,8 @@
       </p>
 
       <p>This is the same bit of code in Coconut:</p>
-      <div class="highlight"><pre><code><span></span><span class="p">((</span><span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="o">|*&gt;</span> <span class="nb">filter</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">sum</span> <span class="o">|&gt;</span> <span class="nb">print</span>
-</code></pre></div>
+      <div class="stcode" <input id="pip5" type="button" value="clickme" onclick="setter(this.id,pip5);"/><div class="highlight"><pre><code><span></span><span class="p">((</span><span class="n">x</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="o">|*&gt;</span> <span class="nb">filter</span> <span class="o">|&gt;</span> <span class="nb">list</span> <span class="o">|&gt;</span> <span class="nb">sum</span> <span class="o">|&gt;</span> <span class="nb">print</span>
+</code></pre></div></div>
 
       <p>
         <em>Notice the use of the multiple-argument pipe forward operator
