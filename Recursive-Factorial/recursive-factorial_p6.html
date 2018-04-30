@@ -20,27 +20,75 @@
   <div id="main-content">
     <div class="split left">
         <h1>Coconut-enabled Improvements: Automatic Tail Call Optimization</h1>
-          <h2>
-            <p>Here's where we left off:</p>
-  <div class="stcode" <input id="rec5" type="button" value="clickme" onclick="setter(this.id,rec5);"/><div class="highlight"><pre><code><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-      <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
-      <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
-          <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">return</span> <span class="mi">1</span>
-          <span class="k">match</span> <span class="n">_</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-              <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <h2>
+          <p>Here's where we left off:</p>
+<div class="stcode" <input id="rec5" type="button" value="clickme" onclick="setter(this.id,rec5);"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="mi">1</span>
+        <span class="k">match</span> <span class="n">_</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;the argument to factorial must be an integer &gt;= 0&quot;</span><span class="p">)</span>
 
-  <span class="c1"># Test cases:</span>
-  <span class="o">-</span><span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
-  <span class="mi">0.5</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
-  <span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
-  <span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
-  </code></pre></div></div>
+<span class="c1"># Test cases:</span>
+<span class="o">-</span><span class="mi">1</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
+<span class="mi">0.5</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># TypeError</span>
+<span class="mi">0</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 1</span>
+<span class="mi">3</span> <span class="o">|&gt;</span> <span class="n">factorial</span> <span class="o">|&gt;</span> <span class="nb">print</span>  <span class="c1"># 6</span>
+</pre></div></div>
+          <p>
+            Coconut can perform automatic tail call optimization, which means
+            that whenever a function directly returns a call to another
+            function, Coconut will optimize away the additional call. Thus, we
+            can improve our factorial function by rewriting it to use a tail
+            call.
+          </p>
+          <p>
+            In the function definition, factorial will now have two arguments:
+            n and acc=1. Change the definition of factorial to include both.
+          </p>
+          <p>
+            If n matches the 0 pattern, we should return acc. When n=0, acc is
+            the desired result of n factorial. That’s why we initialized it to
+            equal 1. Make the function return acc instead of 1 if n matches 0.
+          </p>
+          <p>
+            If n matches the wildcard pattern, we should return n times the
+            call to factorial again, but with the appropriate number of
+            arguments. The first argument should stay the same: n-1. Make the
+            second argument acc*n. The expression acc*n calculates n factorial.
+          </p>
+          <p>
+            The benefit of this is that the function will never raise a
+            RuntimeError because it will never reach Python’s maximum recursion
+            depth.
+          </p>
+          <p>Run the code to make sure the test cases pass!</p>
 
+          <!-- Show solution button -->
+          <div class="btn" onclick="showContent();">
+          Show Solution:
+          </div>
 
-            <p>Run the code to make sure the test cases pass!</p>
-          </h2>
+          <div id="solutionText" style="display:none">
+
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">acc</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Compute n! where n is an integer &gt;= 0.&quot;&quot;&quot;</span>
+    <span class="k">case</span> <span class="n">n</span><span class="p">:</span>
+        <span class="k">match</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">acc</span>
+        <span class="k">match</span> <span class="n">_</span> <span class="ow">is</span> <span class="nb">int</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">acc</span><span class="o">*</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;the argument to factorial must be an integer &gt;= 0&quot;</span><span class="p">)</span></div>
+          </div>
+        </h2>
         <br>
+        <section class="next">
+        <a href='../Addpattern/Addpattern_p1.html' class="btn">Next</a>
+        </section>
         <section class="previous">
         <a href='recursive-factorial_p5.html' class="btn">Previous</a>
         </section>
